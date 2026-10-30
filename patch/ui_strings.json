@@ -1,0 +1,978 @@
+[
+ {
+  "kind": "ui",
+  "en": "VisoMaster - Fusion - 1.0.0",
+  "zh": "VisoMaster - Fusion - 1.0.0",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Exit",
+  "zh": "退出 (Exit)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Load Embeddings",
+  "zh": "加载嵌入 (Load Embeddings)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Save Embeddings",
+  "zh": "保存嵌入 (Save Embeddings)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Save Embeddings As",
+  "zh": "嵌入另存为 (Save Embeddings As)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Load Target Images/Videos Folder",
+  "zh": "加载目标图片/视频文件夹 (Load Target Images/Videos Folder)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Load Target Image/Video Files",
+  "zh": "加载目标图片/视频文件 (Load Target Image/Video Files)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Load Source Images Folder",
+  "zh": "加载源图片文件夹 (Load Source Images Folder)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Load Source Image Files",
+  "zh": "加载源图片文件 (Load Source Image Files)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Fullscreen",
+  "zh": "全屏 (Fullscreen)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "View Shortcuts",
+  "zh": "查看快捷键 (View Shortcuts)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Presets",
+  "zh": "预设 (Presets)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Test",
+  "zh": "Test",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Load Saved Workspace",
+  "zh": "加载已保存工作区 (Load Saved Workspace)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Save Current Workspace",
+  "zh": "保存当前工作区 (Save Current Workspace)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Reset to Last Workspace",
+  "zh": "重置为上次工作区 (Reset to Last Workspace)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Save as Last Workspace",
+  "zh": "保存为上次工作区 (Save as Last Workspace)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Quit without saving..",
+  "zh": "退出而不保存.. (Quit without saving..)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Quit",
+  "zh": "退出 (Quit)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Target Videos/Images",
+  "zh": "目标视频/图片 (Target Videos/Images)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Input Faces",
+  "zh": "输入人脸 (Input Faces)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Jobs",
+  "zh": "任务 (Jobs)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Faces",
+  "zh": "人脸 (Faces)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Parameters",
+  "zh": "参数 (Parameters)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Face Compare",
+  "zh": "人脸对比 (Face Compare)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Face Mask",
+  "zh": "人脸遮罩 (Face Mask)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Frame Number",
+  "zh": "帧号 (Frame Number)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Zoom - 100%",
+  "zh": "缩放 - 100% (Zoom - 100%)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Zoom Timeline",
+  "zh": "缩放时间轴 (Zoom Timeline)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "[Experimental] Toggle Live Sound while the video is playing",
+  "zh": "[实验性] 在视频播放时切换实时声音",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Add Marker",
+  "zh": "添加标记 (Add Marker)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Remove Marker",
+  "zh": "移除标记 (Remove Marker)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Move to Previous Marker",
+  "zh": "移到上一标记 (Move to Previous Marker)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Move to Next Marker",
+  "zh": "移到下一标记 (Move to Next Marker)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "View Fullscreen (F11)",
+  "zh": "全屏查看 (F11)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "FullScreen Theatre (T)",
+  "zh": "全屏影院 (T)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Find Faces",
+  "zh": "查找人脸 (Find Faces)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Clear Faces",
+  "zh": "清除人脸 (Clear Faces)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Swap Faces",
+  "zh": "交换人脸 (Swap Faces)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Edit Faces",
+  "zh": "编辑人脸 (Edit Faces)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Saved Embedding",
+  "zh": "已保存的嵌入 (Saved Embedding)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Save Image",
+  "zh": "保存图片 (Save Image)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Processes the currently selected face across the entire target video or image.",
+  "zh": "在整个目标视频或图像中处理当前选中的面部",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Batch Process Selected Face\\n",
+  "zh": "批量处理选中的面部\n",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Processes all found faces. This feature is only available for target images, not videos.",
+  "zh": "处理所有找到的面部。此功能仅适用于目标图像，不适用于视频。",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Batch Process All Faces\\n",
+  "zh": "批量处理所有面部\n",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Search Embeddings",
+  "zh": "搜索嵌入 (Search Embeddings)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Open Embedding Editor",
+  "zh": "打开嵌入编辑器 (Open Embedding Editor)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Embedding Editor",
+  "zh": "嵌入编辑器 (Embedding Editor)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Open Embedding File",
+  "zh": "打开嵌入文件 (Open Embedding File)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Save all embeddings to the current file",
+  "zh": "保存所有嵌入到当前文件 (Save all embeddings to the current file)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Save Embedding As",
+  "zh": "嵌入另存为 (Save Embedding As)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Target Videos",
+  "zh": "目标视频 (Target Videos)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Select Videos/Images Path",
+  "zh": "选择视频/图像路径 (Select Videos/Images Path)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Choose Target Media Folder",
+  "zh": "选择目标媒体文件夹 (Choose Target Media Folder)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Search Videos/Images",
+  "zh": "搜索视频/图像 (Search Videos/Images)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Sort by Date",
+  "zh": "按日期排序 (Sort by Date)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Target media filters",
+  "zh": "目标媒体筛选器 (Target media filters)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "File Type",
+  "zh": "文件类型 (File Type)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Images",
+  "zh": "图像 (Images)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Videos",
+  "zh": "视频 (Videos)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Webcams",
+  "zh": "网络摄像头 (Webcams)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Height",
+  "zh": "高度 (Height)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "px",
+  "zh": "像素 (px)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Width",
+  "zh": "宽度 (Width)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Loading Target Media %v/%m",
+  "zh": "正在加载目标媒体 %v/%m (Loading Target Media %v/%m)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Select Face Images Path",
+  "zh": "选择人脸图像路径 (Select Face Images Path)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Choose Input Faces Folder",
+  "zh": "选择输入人脸文件夹 (Choose Input Faces Folder)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Search Faces",
+  "zh": "搜索人脸 (Search Faces)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Job Manager",
+  "zh": "任务管理器 (Job Manager)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Save Job",
+  "zh": "保存任务 (Save Job)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Load Job",
+  "zh": "加载任务 (Load Job)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Delete Job",
+  "zh": "删除任务 (Delete Job)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Refresh Job List",
+  "zh": "刷新任务列表 (Refresh Job List)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Process All",
+  "zh": "处理全部 (Process All)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Process Selected",
+  "zh": "处理选中项 (Process Selected)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Face Swap",
+  "zh": "换脸 (Face Swap)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Face Editor",
+  "zh": "人脸编辑器 (Face Editor)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Restorers",
+  "zh": "修复器 (Restorers)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Denoiser",
+  "zh": "降噪器 (Denoiser)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Output Directory",
+  "zh": "输出目录 (Output Directory)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Browse Folder",
+  "zh": "浏览文件夹 (Browse Folder)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Open Folder",
+  "zh": "打开文件夹 (Open Folder)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Settings",
+  "zh": "设置 (Settings)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Apply",
+  "zh": "应用 (Apply)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Save Current as Preset",
+  "zh": "将当前保存为预设 (Save Current as Preset)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Apply Settings",
+  "zh": "应用设置 (Apply Settings)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Clear VRAM",
+  "zh": "清除显存 (Clear VRAM)",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "File",
+  "zh": "文件",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Edit",
+  "zh": "编辑",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "View",
+  "zh": "视图",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Help",
+  "zh": "帮助",
+  "sites": [
+   "main_window.py"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Current Time (mm:ss)",
+  "zh": "当前时间 (Current Time (mm:ss))",
+  "sites": [
+   "main_ui.py:332 via setToolTip"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Select Output Directory",
+  "zh": "选择输出目录 (Select Output Directory)",
+  "sites": [
+   "main_ui.py:583 via setToolTip"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Open Output Directory",
+  "zh": "打开输出目录 (Open Output Directory)",
+  "sites": [
+   "main_ui.py:588 via setToolTip"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Load Target Media Folder",
+  "zh": "加载目标媒体文件夹 (Load Target Media Folder)",
+  "sites": [
+   "main_ui.py:591 via setText"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Load Target Media Files",
+  "zh": "加载目标媒体文件 (Load Target Media Files)",
+  "sites": [
+   "main_ui.py:592 via setText"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Load Input Faces Folder",
+  "zh": "加载输入人脸文件夹 (Load Input Faces Folder)",
+  "sites": [
+   "main_ui.py:593 via setText"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Load Input Face Files",
+  "zh": "加载输入人脸文件 (Load Input Face Files)",
+  "sites": [
+   "main_ui.py:594 via setText"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Open Target Media Folder",
+  "zh": "打开目标媒体文件夹 (Open Target Media Folder)",
+  "sites": [
+   "main_ui.py:597 via QAction"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Open Input Faces Folder",
+  "zh": "打开输入人脸文件夹 (Open Input Faces Folder)",
+  "sites": [
+   "main_ui.py:600 via QAction"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Open Output Folder",
+  "zh": "打开输出文件夹 (Open Output Folder)",
+  "sites": [
+   "main_ui.py:603 via QAction"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Fullscreen\tF11",
+  "zh": "全屏 (Fullscreen)\tF11",
+  "sites": [
+   "main_ui.py:1370 via setText"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Fit to View",
+  "zh": "适应视图 (Fit to View)",
+  "sites": [
+   "main_ui.py:1373 via QAction"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "100% Zoom",
+  "zh": "100% 缩放 (100% Zoom)",
+  "sites": [
+   "main_ui.py:1380 via QAction"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Theatre Mode\tT",
+  "zh": "剧场模式 (Theatre Mode)\tT",
+  "sites": [
+   "main_ui.py:1387 via QAction"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Copy Parameters from Selected Face",
+  "zh": "从所选人脸复制参数 (Copy Parameters from Selected Face)",
+  "sites": [
+   "layout_actions.py:705 via QAction"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Paste Parameters to Selected Face",
+  "zh": "粘贴参数到所选人脸 (Paste Parameters to Selected Face)",
+  "sites": [
+   "layout_actions.py:708 via QAction"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Reset Selected Face Parameters",
+  "zh": "重置所选人脸参数 (Reset Selected Face Parameters)",
+  "sites": [
+   "layout_actions.py:711 via QAction"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Quick Start Guide",
+  "zh": "快速入门指南 (Quick Start Guide)",
+  "sites": [
+   "layout_actions.py:721 via QAction"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "User Manual",
+  "zh": "用户手册 (User Manual)",
+  "sites": [
+   "layout_actions.py:723 via QAction"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "About",
+  "zh": "关于 (About)",
+  "sites": [
+   "layout_actions.py:735 via QAction"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Texture Transfer",
+  "zh": "纹理迁移 (Texture Transfer)",
+  "sites": [
+   "main_ui.py:1548 via dict-value"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Swap Mask",
+  "zh": "换脸遮罩 (Swap Mask)",
+  "sites": [
+   "main_ui.py:1586 via dict-value"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Differencing Mask",
+  "zh": "差分遮罩 (Differencing Mask)",
+  "sites": [
+   "main_ui.py:1587 via dict-value"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Texture Transfer Mask",
+  "zh": "纹理迁移遮罩 (Texture Transfer Mask)",
+  "sites": [
+   "main_ui.py:1588 via dict-value"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Faces / Embeddings",
+  "zh": "人脸 / 嵌入 (Faces / Embeddings)",
+  "sites": [
+   "main_ui.py:1331 via seq-member"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Frame | Time | FPS",
+  "zh": "帧 | 时间 | 帧率",
+  "sites": [
+   "main_ui.py:379 via QLabel"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Source video FPS / measured playback FPS",
+  "zh": "源视频帧率 / 实测播放帧率",
+  "sites": [
+   "main_ui.py:420 via setToolTip"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Purge Unused K/V Maps",
+  "zh": "清理未用的 K/V 映射 (Purge Unused K/V Maps)",
+  "sites": [
+   "main_ui.py:543 via QPushButton"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "Scans the registry and safely deletes orphaned K/V map tensors to free up disk space.",
+  "zh": "扫描索引, 安全删除已没有引用的 K/V 映射张量, 腾出磁盘空间。",
+  "sites": [
+   "main_ui.py:545 via setToolTip"
+  ]
+ },
+ {
+  "kind": "ui",
+  "en": "",
+  "zh": "",
+  "sites": [
+   "main_ui.py:703 via setText"
+  ]
+ }
+]

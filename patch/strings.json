@@ -1,0 +1,6394 @@
+[
+ {
+  "kind": "label",
+  "en": "Swapper Model",
+  "zh": "换脸模型 (Swapper Model)",
+  "sites": [
+   "swapper_layout_data.py:12"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Choose which swapper model to use for face swapping.",
+  "zh": "选择用于换脸的换脸模型。",
+  "sites": [
+   "swapper_layout_data.py:26"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Swapper Resolution",
+  "zh": "换脸分辨率 (Swapper Resolution)",
+  "sites": [
+   "swapper_layout_data.py:30"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Select the resolution for the swapped face in pixels. Higher values offer better quality but are slower to process.",
+  "zh": "选择换脸结果的分辨率（以像素为单位）。数值越高画质越好，但处理速度越慢。",
+  "sites": [
+   "swapper_layout_data.py:35"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Enable Auto Resolution",
+  "zh": "启用自动分辨率 (Enable Auto Resolution)",
+  "sites": [
+   "swapper_layout_data.py:39"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Autoselect Swapper Resolution based on original Face Size (only for Inswapper).",
+  "zh": "根据原始人脸大小自动选择换脸分辨率（仅适用于 Inswapper）。",
+  "sites": [
+   "swapper_layout_data.py:43"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "512 Resolution",
+  "zh": "512 分辨率 (512 Resolution)",
+  "sites": [
+   "swapper_layout_data.py:47",
+   "swapper_layout_data.py:55",
+   "swapper_layout_data.py:63"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Like the inswapper Resolution (512) for InStyleSwappers. i dont know to hide it with 3 selections possible :(.",
+  "zh": "类似于 InStyleSwappers 的 inswapper 分辨率（512）。我不知道如何用 3 个可选选项隐藏它 :(。",
+  "sites": [
+   "swapper_layout_data.py:51",
+   "swapper_layout_data.py:59",
+   "swapper_layout_data.py:67"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "DFM Model",
+  "zh": "DFM 模型 (DFM Model)",
+  "sites": [
+   "swapper_layout_data.py:71"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Select which pretrained DeepFaceLive (DFM) Model to use for swapping.",
+  "zh": "选择用于换脸的预训练 DeepFaceLive (DFM) 模型。",
+  "sites": [
+   "swapper_layout_data.py:76"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "AMP Morph Factor",
+  "zh": "AMP 形变因子 (AMP Morph Factor)",
+  "sites": [
+   "swapper_layout_data.py:80"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "AMP Morph Factor for DFM AMP Models",
+  "zh": "DFM AMP 模型的 AMP 变形系数",
+  "sites": [
+   "swapper_layout_data.py:87"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "RCT Color Transfer",
+  "zh": "RCT 色彩迁移 (RCT Color Transfer)",
+  "sites": [
+   "swapper_layout_data.py:91"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "RCT Color Transfer for DFM Models",
+  "zh": "DFM 模型的 RCT 颜色迁移",
+  "sites": [
+   "swapper_layout_data.py:95"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Face Alignment Interpolation",
+  "zh": "面部对齐插值 (Face Alignment Interpolation)",
+  "sites": [
+   "swapper_layout_data.py:99"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Interpolation mode used when warping the face into the 512x512 alignment crop. Bicubic preserves more high-frequency detail (sharper edges, eye corneas) at a small extra cost.",
+  "zh": "将人脸变形到 512x512 对齐裁剪区域时使用的插值模式。双三次插值以少量额外开销保留更多高频细节（边缘更锐利、眼角膜更清晰）。",
+  "sites": [
+   "swapper_layout_data.py:102"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Similarity Threshold",
+  "zh": "相似度阈值 (Similarity Threshold)",
+  "sites": [
+   "swapper_layout_data.py:106"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Set the similarity threshold to control how similar the detected face should be to the reference (target) face.",
+  "zh": "设置相似度阈值，以控制检测到的人脸与参考（目标）人脸之间的相似程度。",
+  "sites": [
+   "swapper_layout_data.py:111"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Pre Swap Sharpness (1.0)",
+  "zh": "换脸前锐化（1.0） (Pre Swap Sharpness (1.0))",
+  "sites": [
+   "swapper_layout_data.py:115"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Strength",
+  "zh": "强度 (Strength)",
+  "sites": [
+   "swapper_layout_data.py:127"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Apply additional swapping iterations to increase the strength of the result, which may increase likeness.",
+  "zh": "应用额外的换脸迭代以增强结果强度，这可能会提高相似度。",
+  "sites": [
+   "swapper_layout_data.py:129"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Mode 2 (Anti-Drift & Texture)",
+  "zh": "模式 2（防漂移与纹理） (Mode 2 (Anti-Drift & Texture))",
+  "sites": [
+   "swapper_layout_data.py:133"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Use the advanced iteration mode (Phase Correlation & Frequency Separation) to prevent drift and preserve skin texture during multiple swaps.",
+  "zh": "使用高级迭代模式（相位相关与频率分离），在多次换脸过程中防止漂移并保留皮肤纹理。",
+  "sites": [
+   "swapper_layout_data.py:137"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Amount",
+  "zh": "数量 (Amount)",
+  "sites": [
+   "swapper_layout_data.py:141",
+   "swapper_layout_data.py:158",
+   "swapper_layout_data.py:188",
+   "swapper_layout_data.py:446"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Increase up to 5x additional swaps (500%). 200% is generally a good result. Set to 0 to turn off swapping but allow the rest of the pipeline to apply to the original image.",
+  "zh": "最多增加 5 倍额外换脸（500%）。200% 通常效果良好。设置为 0 可关闭换脸，但允许管线其余部分应用于原始图像。",
+  "sites": [
+   "swapper_layout_data.py:148"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Face Likeness",
+  "zh": "面部相似度 (Face Likeness)",
+  "sites": [
+   "swapper_layout_data.py:152"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "This is a feature to perform direct adjustments to likeness of faces.",
+  "zh": "这是用于直接调整面部相似度的功能。",
+  "sites": [
+   "swapper_layout_data.py:154"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Determines the factor of likeness between the source and assigned faces.",
+  "zh": "决定源面部与指定面部之间的相似度因子。",
+  "sites": [
+   "swapper_layout_data.py:166"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Volumetric Strength",
+  "zh": "体积强度 (Volumetric Strength)",
+  "sites": [
+   "swapper_layout_data.py:170"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Determines the strength of the likeness factor.",
+  "zh": "决定相似度因子的强度。",
+  "sites": [
+   "swapper_layout_data.py:178"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Face Keypoints Replacer",
+  "zh": "面部关键点替换器 (Face Keypoints Replacer)",
+  "sites": [
+   "swapper_layout_data.py:182"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adjust the source face to get the target KPS points",
+  "zh": "调整源面部以获得目标 KPS 点",
+  "sites": [
+   "swapper_layout_data.py:184"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Determines the factor of KPS transfert from target to the source face.",
+  "zh": "决定从目标面部到源面部的 KPS 迁移因子。",
+  "sites": [
+   "swapper_layout_data.py:196"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Border Mask",
+  "zh": "边界遮罩 (Border Mask)",
+  "sites": [
+   "swapper_layout_data.py:202"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "A rectangle with adjustable bottom, left, right, top, and sides that masks the swapped face result back into the original image.",
+  "zh": "一个可调整底部、左侧、右侧、顶部和侧边的矩形，用于将换脸结果遮罩回原始图像中。",
+  "sites": [
+   "swapper_layout_data.py:204",
+   "swapper_layout_data.py:215",
+   "swapper_layout_data.py:226",
+   "swapper_layout_data.py:237",
+   "swapper_layout_data.py:248"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Bottom Border",
+  "zh": "底部边界 (Bottom Border)",
+  "sites": [
+   "swapper_layout_data.py:208"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Left Border",
+  "zh": "左侧边界 (Left Border)",
+  "sites": [
+   "swapper_layout_data.py:219"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Right Border",
+  "zh": "右侧边界 (Right Border)",
+  "sites": [
+   "swapper_layout_data.py:230"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Top Border",
+  "zh": "顶部边界 (Top Border)",
+  "sites": [
+   "swapper_layout_data.py:241"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Border Blur",
+  "zh": "边界模糊 (Border Blur)",
+  "sites": [
+   "swapper_layout_data.py:252"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Border mask blending distance.",
+  "zh": "边界遮罩混合距离。",
+  "sites": [
+   "swapper_layout_data.py:259"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Profile Angle Mask",
+  "zh": "侧脸角度遮罩 (Profile Angle Mask)",
+  "sites": [
+   "swapper_layout_data.py:263"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Automatically fades the far side of the face when the head is turned (profile view) to hide distortions.",
+  "zh": "当头部转动（侧面视角）时自动淡化面部远侧，以隐藏失真。",
+  "sites": [
+   "swapper_layout_data.py:265"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Angle Threshold",
+  "zh": "角度阈值 (Angle Threshold)",
+  "sites": [
+   "swapper_layout_data.py:269"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Starting angle (degrees) to apply the mask. Lower values apply it sooner.",
+  "zh": "应用遮罩的起始角度（度）。数值越小，应用越早。",
+  "sites": [
+   "swapper_layout_data.py:276"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Fade Strength",
+  "zh": "衰减强度 (Fade Strength)",
+  "sites": [
+   "swapper_layout_data.py:280"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Strength of the gradient fade.",
+  "zh": "渐变淡化的强度。",
+  "sites": [
+   "swapper_layout_data.py:287"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Occlusion Mask",
+  "zh": "遮挡遮罩 (Occlusion Mask)",
+  "sites": [
+   "swapper_layout_data.py:291"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Allow objects occluding the face to show up in the swapped image.",
+  "zh": "允许遮挡面部的物体显示在换脸图像中。",
+  "sites": [
+   "swapper_layout_data.py:293",
+   "swapper_layout_data.py:320"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Size",
+  "zh": "大小 (Size)",
+  "sites": [
+   "swapper_layout_data.py:299",
+   "swapper_layout_data.py:342",
+   "swapper_layout_data.py:372"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Grows or shrinks the occluded region",
+  "zh": "扩大或缩小遮挡区域",
+  "sites": [
+   "swapper_layout_data.py:306"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Tongue/Mouth Priority",
+  "zh": "舌头/嘴部优先级 (Tongue/Mouth Priority)",
+  "sites": [
+   "swapper_layout_data.py:310"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Prevents the tongue or inner mouth objects from being erased when increasing the Occluder Size. Uses FaceParser to protect inner mouth area.",
+  "zh": "防止增大遮挡器尺寸时舌头或口腔内部物体被擦除。使用 FaceParser 保护口腔内部区域。",
+  "sites": [
+   "swapper_layout_data.py:314"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "DFL XSeg Mask",
+  "zh": "DFL XSeg 遮罩 (DFL XSeg Mask)",
+  "sites": [
+   "swapper_layout_data.py:318"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Mouth/Lips Protection",
+  "zh": "嘴部/嘴唇保护 (Mouth/Lips Protection)",
+  "sites": [
+   "swapper_layout_data.py:326"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Prevents XSeg from masking out the inner mouth area. Fixes artifacts where open mouths are mistaken for obstacles.",
+  "zh": "防止 XSeg 将口腔内部区域遮罩掉。修复张嘴被误判为障碍物而产生的伪影。",
+  "sites": [
+   "swapper_layout_data.py:330"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Face Obstacles Protection",
+  "zh": "面部障碍物保护 (Face Obstacles Protection)",
+  "sites": [
+   "swapper_layout_data.py:334"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Prevents XSeg from masking out the face obstacles that cover the face like glasses, microphone, hand on face, etc. when using positive values.",
+  "zh": "使用正值时，防止 XSeg 将覆盖面部的障碍物（如眼镜、麦克风、手放在脸上等）遮罩掉。",
+  "sites": [
+   "swapper_layout_data.py:338"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Grows or shrinks the occluded region.",
+  "zh": "增大或缩小被遮挡区域。",
+  "sites": [
+   "swapper_layout_data.py:349"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Occluder/DFL XSeg Blur",
+  "zh": "遮挡物/DFL XSeg 模糊 (Occluder/DFL XSeg Blur)",
+  "sites": [
+   "swapper_layout_data.py:353"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Blend value for Occluder and XSeg.",
+  "zh": "遮挡器与 XSeg 的混合值。",
+  "sites": [
+   "swapper_layout_data.py:360"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Xseg Mouth",
+  "zh": "Xseg 嘴部 (Xseg Mouth)",
+  "sites": [
+   "swapper_layout_data.py:364"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Use second Xseg Mask on mouth region.",
+  "zh": "在嘴部区域使用第二个 XSeg Mask。",
+  "sites": [
+   "swapper_layout_data.py:368"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Grows or shrinks the occluded mouth region Xseg Mask.",
+  "zh": "增大或缩小嘴部被遮挡区域的 XSeg Mask。",
+  "sites": [
+   "swapper_layout_data.py:379"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Blur",
+  "zh": "模糊 (Blur)",
+  "sites": [
+   "swapper_layout_data.py:383"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Blur for mouth XSeg Mask",
+  "zh": "嘴部 XSeg Mask 模糊",
+  "sites": [
+   "swapper_layout_data.py:390"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Mouth",
+  "zh": "嘴部 (Mouth)",
+  "sites": [
+   "swapper_layout_data.py:394",
+   "swapper_layout_data.py:672",
+   "swapper_layout_data.py:1239"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Grow Mouth Region (uses Faceparser on swap)",
+  "zh": "增大嘴部区域（在换脸结果上使用 FaceParser）",
+  "sites": [
+   "swapper_layout_data.py:401"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Upper Lip",
+  "zh": "上唇 (Upper Lip)",
+  "sites": [
+   "swapper_layout_data.py:405",
+   "swapper_layout_data.py:683"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Grow Upper Lip Region (uses Faceparser on swap)",
+  "zh": "增大上唇区域（在换脸结果上使用 FaceParser）",
+  "sites": [
+   "swapper_layout_data.py:412"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Lower Lip",
+  "zh": "下唇 (Lower Lip)",
+  "sites": [
+   "swapper_layout_data.py:416",
+   "swapper_layout_data.py:694"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Grow Lower Lip Region (uses Faceparser on swap)",
+  "zh": "增大下唇区域（在换脸结果上使用 FaceParser）",
+  "sites": [
+   "swapper_layout_data.py:423"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Text Masking",
+  "zh": "文字遮罩 (Text Masking)",
+  "sites": [
+   "swapper_layout_data.py:427"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Use descriptions to identify objects that will be present in the final swapped image.",
+  "zh": "使用描述来识别将出现在最终换脸图像中的对象。",
+  "sites": [
+   "swapper_layout_data.py:429"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Text Masking Entry",
+  "zh": "文字遮罩输入 (Text Masking Entry)",
+  "sites": [
+   "swapper_layout_data.py:435"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "To use, type a word(s) in the box separated by commas and press <enter>.",
+  "zh": "使用时，在框中输入一个或多个词语，用逗号分隔，然后按回车键。",
+  "sites": [
+   "swapper_layout_data.py:442"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Increase to strengthen the effect.",
+  "zh": "增大该值可增强效果。",
+  "sites": [
+   "swapper_layout_data.py:453"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Mouth Fit & Align",
+  "zh": "嘴部适配与对齐 (Mouth Fit & Align)",
+  "sites": [
+   "swapper_layout_data.py:459"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Repositions and scales the original mouth to fit the swap without distorting its shape. Can be used independently of Face Parser.",
+  "zh": "重新定位并缩放原始嘴部以贴合换脸结果，同时不使其形状变形。可独立于 Face Parser 使用。",
+  "sites": [
+   "swapper_layout_data.py:461"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Use Original Mouth",
+  "zh": "使用原始嘴部 (Use Original Mouth)",
+  "sites": [
+   "swapper_layout_data.py:465"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Uses the Original Mouth for the Fit & Align.",
+  "zh": "使用原始嘴部进行贴合与对齐。",
+  "sites": [
+   "swapper_layout_data.py:469"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Cavity Blur Amount",
+  "zh": "口腔模糊量 (Cavity Blur Amount)",
+  "sites": [
+   "swapper_layout_data.py:473"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adjusts the blur radius for the artificial mouth cavity background. High values destroy fake teeth structures completely.",
+  "zh": "调整人工口腔背景的模糊半径。数值较高时会完全破坏假牙结构。",
+  "sites": [
+   "swapper_layout_data.py:480"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Cavity Shadow (Gamma)",
+  "zh": "口腔阴影（伽马） (Cavity Shadow (Gamma))",
+  "sites": [
+   "swapper_layout_data.py:484"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adjusts the depth of the mouth cavity shadow. Higher values create deeper shadows while preserving natural red/pink flesh tones. 1.0 means no darkening.",
+  "zh": "调整口腔阴影的深度。数值越高，阴影越深，同时保留自然的红/粉色肉色。1.0 表示不变暗。",
+  "sites": [
+   "swapper_layout_data.py:492"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Original Cavity Blending",
+  "zh": "原始口腔混合 (Original Cavity Blending)",
+  "sites": [
+   "swapper_layout_data.py:496"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Controls the alpha blending between the artificial cavity shadow and the original aligned mouth. 0.0 applies pure artificial darkness, while 1.0 fully restores the original inner mouth textures and teeth.",
+  "zh": "控制人工口腔阴影与原始对齐嘴部之间的透明度混合。0.0 表示应用纯人工暗色，1.0 表示完全恢复原始口腔内部纹理和牙齿。",
+  "sites": [
+   "swapper_layout_data.py:504"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Restore Tongue",
+  "zh": "恢复舌头 (Restore Tongue)",
+  "sites": [
+   "swapper_layout_data.py:508"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Restores the tongue and fits it. Can falsely mix the lips in.",
+  "zh": "恢复舌头并使其贴合。可能会错误地混入嘴唇。",
+  "sites": [
+   "swapper_layout_data.py:512"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Tongue Edge Blur",
+  "zh": "舌头边缘模糊 (Tongue Edge Blur)",
+  "sites": [
+   "swapper_layout_data.py:516"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adjusts the blur amount for the tongue edges. Higher values create a more blurred transition.",
+  "zh": "调整舌头边缘的模糊量。数值越高，过渡越模糊。",
+  "sites": [
+   "swapper_layout_data.py:524"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Paste After Restorer",
+  "zh": "在修复器之后粘贴 (Paste After Restorer)",
+  "sites": [
+   "swapper_layout_data.py:528"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Paste the Mouth Mask after the Restorers.",
+  "zh": "在修复器之后粘贴嘴部遮罩。",
+  "sites": [
+   "swapper_layout_data.py:532"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Smart Sharpen (USM)",
+  "zh": "智能锐化（USM） (Smart Sharpen (USM))",
+  "sites": [
+   "swapper_layout_data.py:536"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Applies Edge-Aware Unsharp Masking to the mouth. Enhances teeth and lip edges without adding noise to smooth skin.",
+  "zh": "对嘴部应用边缘感知反锐化掩模。增强牙齿和唇部边缘，而不会给光滑皮肤增加噪点。",
+  "sites": [
+   "swapper_layout_data.py:544"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Mouth Zoom",
+  "zh": "嘴部缩放 (Mouth Zoom)",
+  "sites": [
+   "swapper_layout_data.py:548"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Mouth Zoom slider.",
+  "zh": "嘴部缩放滑块。",
+  "sites": [
+   "swapper_layout_data.py:556"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Face Parser Mask",
+  "zh": "Face Parser 遮罩 (Face Parser Mask)",
+  "sites": [
+   "swapper_layout_data.py:560"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Allow the unprocessed background from the orginal image to show in the final swap.",
+  "zh": "允许原始图像中未经处理的背景显示在最终换脸结果中。",
+  "sites": [
+   "swapper_layout_data.py:562"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Parse at Pipeline End",
+  "zh": "在流程末端解析 (Parse at Pipeline End)",
+  "sites": [
+   "swapper_layout_data.py:568"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Run the Parser Mask at Pipeline End.",
+  "zh": "在流程末端运行解析蒙版。",
+  "sites": [
+   "swapper_layout_data.py:572"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Mouth Inside toggle",
+  "zh": "口腔内侧开关 (Mouth Inside toggle)",
+  "sites": [
+   "swapper_layout_data.py:576"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Keep the parse inside the mouth (value over 1 will slowly overlap the swapped mouth).",
+  "zh": "将解析蒙版保持在嘴部内侧（值大于 1 时会逐渐覆盖换脸后的嘴部）。",
+  "sites": [
+   "swapper_layout_data.py:580"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Background",
+  "zh": "背景 (Background)",
+  "sites": [
+   "swapper_layout_data.py:584",
+   "swapper_layout_data.py:1280"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Negative/Positive values shrink and grow the mask.",
+  "zh": "负值/正值会缩小和扩大蒙版。",
+  "sites": [
+   "swapper_layout_data.py:591"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Face",
+  "zh": "面部 (Face)",
+  "sites": [
+   "swapper_layout_data.py:595"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adjust the size of the Mask. Mast the entire face.",
+  "zh": "调整蒙版的大小。覆盖整个面部。",
+  "sites": [
+   "swapper_layout_data.py:602"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Left Eyebrow",
+  "zh": "左眉毛 (Left Eyebrow)",
+  "sites": [
+   "swapper_layout_data.py:606"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adjust the size of the Mask. Mast the left eyebrow.",
+  "zh": "调整蒙版的大小。覆盖左眉。",
+  "sites": [
+   "swapper_layout_data.py:613"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Right Eyebrow",
+  "zh": "右眉毛 (Right Eyebrow)",
+  "sites": [
+   "swapper_layout_data.py:617"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adjust the size of the Mask. Mast the right eyebrow.",
+  "zh": "调整蒙版的大小。覆盖右眉。",
+  "sites": [
+   "swapper_layout_data.py:624"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Left Eye",
+  "zh": "左眼 (Left Eye)",
+  "sites": [
+   "swapper_layout_data.py:628"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adjust the size of the Mask. Mast the left eye.",
+  "zh": "调整蒙版的大小。覆盖左眼。",
+  "sites": [
+   "swapper_layout_data.py:635"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Right Eye",
+  "zh": "右眼 (Right Eye)",
+  "sites": [
+   "swapper_layout_data.py:639"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adjust the size of the Mask. Mast the right eye.",
+  "zh": "调整蒙版的大小。覆盖右眼。",
+  "sites": [
+   "swapper_layout_data.py:646"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "EyeGlasses",
+  "zh": "眼镜 (EyeGlasses)",
+  "sites": [
+   "swapper_layout_data.py:650"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adjust the size of the Mask. Mast the eyeglasses.",
+  "zh": "调整蒙版的大小。覆盖眼镜。",
+  "sites": [
+   "swapper_layout_data.py:657"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Nose",
+  "zh": "鼻子 (Nose)",
+  "sites": [
+   "swapper_layout_data.py:661",
+   "swapper_layout_data.py:1228"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adjust the size of the Mask. Mast the nose.",
+  "zh": "调整蒙版的大小。覆盖鼻子。",
+  "sites": [
+   "swapper_layout_data.py:668"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adjust the size of the Mask. Mast the inside of the mouth, including the tongue.",
+  "zh": "调整蒙版的大小。覆盖口腔内部，包括舌头。",
+  "sites": [
+   "swapper_layout_data.py:679"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adjust the size of the Mask. Mast the upper lip.",
+  "zh": "调整遮罩大小。遮罩上唇。",
+  "sites": [
+   "swapper_layout_data.py:690"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adjust the size of the Mask. Mast the lower lip.",
+  "zh": "调整遮罩大小。遮罩下唇。",
+  "sites": [
+   "swapper_layout_data.py:701"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Neck",
+  "zh": "颈部 (Neck)",
+  "sites": [
+   "swapper_layout_data.py:705",
+   "swapper_layout_data.py:1250"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adjust the size of the Mask. Mast the neck.",
+  "zh": "调整遮罩大小。遮罩颈部。",
+  "sites": [
+   "swapper_layout_data.py:712"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Hair",
+  "zh": "头发 (Hair)",
+  "sites": [
+   "swapper_layout_data.py:716"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adjust the size of the Mask. Mast the hair.",
+  "zh": "调整遮罩大小。遮罩头发。",
+  "sites": [
+   "swapper_layout_data.py:723"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Background Blur",
+  "zh": "背景模糊 (Background Blur)",
+  "sites": [
+   "swapper_layout_data.py:727"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Blend the value for Background Parser",
+  "zh": "背景解析器的混合值。",
+  "sites": [
+   "swapper_layout_data.py:734"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Face Blur",
+  "zh": "面部模糊 (Face Blur)",
+  "sites": [
+   "swapper_layout_data.py:738"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Blend the value for Face Parser",
+  "zh": "人脸解析器的混合值。",
+  "sites": [
+   "swapper_layout_data.py:745",
+   "swapper_layout_data.py:756"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Face Blend",
+  "zh": "面部融合 (Face Blend)",
+  "sites": [
+   "swapper_layout_data.py:749",
+   "swapper_layout_data.py:1184"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Restore Eyes",
+  "zh": "眼部修复 (Restore Eyes)",
+  "sites": [
+   "swapper_layout_data.py:760"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Restore eyes from the original face.",
+  "zh": "从原始面部恢复眼睛。",
+  "sites": [
+   "swapper_layout_data.py:762"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Eyes Blend Amount",
+  "zh": "眼部混合量 (Eyes Blend Amount)",
+  "sites": [
+   "swapper_layout_data.py:766"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Increase this to show more of the swapped eyes. Decrease it to show more of the original eyes.",
+  "zh": "增大此值以显示更多换脸后的眼睛。减小此值以显示更多原始眼睛。",
+  "sites": [
+   "swapper_layout_data.py:773"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Eyes Size Factor",
+  "zh": "眼部大小系数 (Eyes Size Factor)",
+  "sites": [
+   "swapper_layout_data.py:777"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Reduce this when swapping faces zoomed out of the frame.",
+  "zh": "当换脸对象在画面中缩小时，减小此值。",
+  "sites": [
+   "swapper_layout_data.py:785"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Eyes Feather Blend",
+  "zh": "眼部羽化混合 (Eyes Feather Blend)",
+  "sites": [
+   "swapper_layout_data.py:789"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adjust the blending of eyes border. Increase this to show more of the original eyes. Decrease this to show more of the swapped eyes.",
+  "zh": "调整眼部边界的混合。增大此值以显示更多原始眼睛。减小此值以显示更多换脸后的眼睛。",
+  "sites": [
+   "swapper_layout_data.py:796"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "X Eyes Radius Factor",
+  "zh": "眼部 X 半径系数 (X Eyes Radius Factor)",
+  "sites": [
+   "swapper_layout_data.py:800"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "These parameters determine the shape of the mask. If both are equal to 1.0, the mask will be circular. If either one is greater or less than 1.0, the mask will become oval, stretching or shrinking along the corresponding direction.",
+  "zh": "这些参数决定遮罩的形状。如果两者均等于 1.0，遮罩将为圆形。如果任一参数大于或小于 1.0，遮罩将变为椭圆形，沿相应方向拉伸或收缩。",
+  "sites": [
+   "swapper_layout_data.py:808",
+   "swapper_layout_data.py:820",
+   "swapper_layout_data.py:904",
+   "swapper_layout_data.py:916"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Y Eyes Radius Factor",
+  "zh": "眼部 Y 半径系数 (Y Eyes Radius Factor)",
+  "sites": [
+   "swapper_layout_data.py:812"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "X Eyes Offset",
+  "zh": "眼部 X 偏移 (X Eyes Offset)",
+  "sites": [
+   "swapper_layout_data.py:824"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Moves the Eyes Mask on the X Axis.",
+  "zh": "沿 X 轴移动眼部遮罩。",
+  "sites": [
+   "swapper_layout_data.py:831"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Y Eyes Offset",
+  "zh": "眼部 Y 偏移 (Y Eyes Offset)",
+  "sites": [
+   "swapper_layout_data.py:835"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Moves the Eyes Mask on the Y Axis.",
+  "zh": "沿 Y 轴移动眼部遮罩。",
+  "sites": [
+   "swapper_layout_data.py:842"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Eyes Spacing Offset",
+  "zh": "眼部间距偏移 (Eyes Spacing Offset)",
+  "sites": [
+   "swapper_layout_data.py:846"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Change the Eyes Spacing distance.",
+  "zh": "调整眼睛间距。",
+  "sites": [
+   "swapper_layout_data.py:853"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Restore Mouth",
+  "zh": "嘴部修复 (Restore Mouth)",
+  "sites": [
+   "swapper_layout_data.py:857"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Restore mouth from the original face.",
+  "zh": "从原始脸部恢复嘴部。",
+  "sites": [
+   "swapper_layout_data.py:859"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Mouth Blend Amount",
+  "zh": "嘴部混合量 (Mouth Blend Amount)",
+  "sites": [
+   "swapper_layout_data.py:863"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Increase this to show more of the swapped Mouth. Decrease it to show more of the original Mouth.",
+  "zh": "增大此值以显示更多替换后的嘴部，减小此值以显示更多原始嘴部。",
+  "sites": [
+   "swapper_layout_data.py:870"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Mouth Size Factor",
+  "zh": "嘴部大小系数 (Mouth Size Factor)",
+  "sites": [
+   "swapper_layout_data.py:874"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Increase this when swapping faces zoomed out of the frame.",
+  "zh": "当换脸对象在画面中缩小时增大此值。",
+  "sites": [
+   "swapper_layout_data.py:881"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Mouth Feather Blend",
+  "zh": "嘴部羽化混合 (Mouth Feather Blend)",
+  "sites": [
+   "swapper_layout_data.py:885"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adjust the border of Mouth blending. Increase this to show more of the original Mouth. Decrease this to show more of the swapped Mouth.",
+  "zh": "调整嘴部混合边界。增大此值以显示更多原始嘴部，减小此值以显示更多替换后的嘴部。",
+  "sites": [
+   "swapper_layout_data.py:892"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "X Mouth Radius Factor",
+  "zh": "嘴部 X 半径系数 (X Mouth Radius Factor)",
+  "sites": [
+   "swapper_layout_data.py:896"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Y Mouth Radius Factor",
+  "zh": "嘴部 Y 半径系数 (Y Mouth Radius Factor)",
+  "sites": [
+   "swapper_layout_data.py:908"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "X Mouth Offset",
+  "zh": "嘴部 X 偏移 (X Mouth Offset)",
+  "sites": [
+   "swapper_layout_data.py:920"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Moves the Mouth Mask on the X Axis.",
+  "zh": "沿 X 轴移动嘴部遮罩。",
+  "sites": [
+   "swapper_layout_data.py:927"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Y Mouth Offset",
+  "zh": "嘴部 Y 偏移 (Y Mouth Offset)",
+  "sites": [
+   "swapper_layout_data.py:931"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Moves the Mouth Mask on the Y Axis.",
+  "zh": "沿 Y 轴移动嘴部遮罩。",
+  "sites": [
+   "swapper_layout_data.py:938"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Eyes/Mouth Blur",
+  "zh": "眼部/嘴部模糊 (Eyes/Mouth Blur)",
+  "sites": [
+   "swapper_layout_data.py:942"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adjust the blur of mask border.",
+  "zh": "调整遮罩边界模糊。",
+  "sites": [
+   "swapper_layout_data.py:949"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Differencing",
+  "zh": "差分 (Differencing)",
+  "sites": [
+   "swapper_layout_data.py:955"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Diffing between swap and original. advanced diffing model, which weights the difference between pixel.",
+  "zh": "在替换与原始之间进行差异比较。高级差异比较模型，对像素间差异进行加权。",
+  "sites": [
+   "swapper_layout_data.py:957"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Difference Lower Limit",
+  "zh": "差值下限 (Difference Lower Limit)",
+  "sites": [
+   "swapper_layout_data.py:961"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Difference Upper Limit",
+  "zh": "差值上限 (Difference Upper Limit)",
+  "sites": [
+   "swapper_layout_data.py:972"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Lower Strength",
+  "zh": "下限强度 (Lower Strength)",
+  "sites": [
+   "swapper_layout_data.py:983"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Upper Strength",
+  "zh": "上限强度 (Upper Strength)",
+  "sites": [
+   "swapper_layout_data.py:994"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Mask Blur Amount",
+  "zh": "遮罩模糊量 (Mask Blur Amount)",
+  "sites": [
+   "swapper_layout_data.py:1005"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Mask Blur for smoother transitions",
+  "zh": "遮罩模糊以实现更平滑过渡",
+  "sites": [
+   "swapper_layout_data.py:1012"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Transfer Texture",
+  "zh": "纹理迁移 (Transfer Texture)",
+  "sites": [
+   "swapper_layout_data.py:1016"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Enable Texture Transfer",
+  "zh": "启用纹理传输",
+  "sites": [
+   "swapper_layout_data.py:1018"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Mode 2",
+  "zh": "模式 2 (Mode 2)",
+  "sites": [
+   "swapper_layout_data.py:1022"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Different values for gradient magnitude calculation, sometimes better but sometimes too much stripes in face",
+  "zh": "梯度幅值计算的不同数值，有时效果更好，但有时脸部条纹过多。",
+  "sites": [
+   "swapper_layout_data.py:1026"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Texture Strength Amount",
+  "zh": "纹理强度量 (Texture Strength Amount)",
+  "sites": [
+   "swapper_layout_data.py:1030"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Define how strong texture Transfer is applied",
+  "zh": "定义纹理迁移的应用强度。",
+  "sites": [
+   "swapper_layout_data.py:1037"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Texture Gamma adjust",
+  "zh": "纹理伽马调整 (Texture Gamma adjust)",
+  "sites": [
+   "swapper_layout_data.py:1041"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "adjusting can sometimes be good. Gamma adjust of original Face for Texture Transfer",
+  "zh": "调整有时可能效果不错。对用于纹理迁移的原始人脸进行伽马调整。",
+  "sites": [
+   "swapper_layout_data.py:1049"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Texture Contrast adjust",
+  "zh": "纹理对比度调整 (Texture Contrast adjust)",
+  "sites": [
+   "swapper_layout_data.py:1053"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "adjusting can sometimes be good. Contrast adjust of original Face for Texture Transfer",
+  "zh": "调整有时可能效果不错。对用于纹理迁移的原始人脸进行对比度调整。",
+  "sites": [
+   "swapper_layout_data.py:1061"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "CLAHE",
+  "zh": "CLAHE (CLAHE)",
+  "sites": [
+   "swapper_layout_data.py:1065"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "for some extra wums. (Contrast Limited Adaptive Histogram Equalization). enhancing local contrast while preventing noise overamplification. handle with care, changes color dynamics.",
+  "zh": "用于增加一些额外的冲击力。（对比度受限自适应直方图均衡化）。增强局部对比度，同时防止噪声过度放大。请谨慎使用，会改变色彩动态。",
+  "sites": [
+   "swapper_layout_data.py:1069"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "CLAHE Limit",
+  "zh": "CLAHE 限制 (CLAHE Limit)",
+  "sites": [
+   "swapper_layout_data.py:1073"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "CLAHE Blend",
+  "zh": "CLAHE 混合 (CLAHE Blend)",
+  "sites": [
+   "swapper_layout_data.py:1085"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "lower blend for additional texture strength without making colors too extreme",
+  "zh": "降低混合度可获得额外的纹理强度，同时避免颜色过于极端。",
+  "sites": [
+   "swapper_layout_data.py:1093"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "VGG Mask Exclude",
+  "zh": "VGG 遮罩排除 (VGG Mask Exclude)",
+  "sites": [
+   "swapper_layout_data.py:1097"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Original Exclude Mask with VGG Model (without lower limit / upper limit / strenght  manipulation)",
+  "zh": "使用 VGG 模型的原始排除遮罩（不进行下限 / 上限 / 强度操控）。",
+  "sites": [
+   "swapper_layout_data.py:1101"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Upper Limit",
+  "zh": "上限 (Upper Limit)",
+  "sites": [
+   "swapper_layout_data.py:1105"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "VGG Mask Blur Amount",
+  "zh": "VGG 遮罩模糊量 (VGG Mask Blur Amount)",
+  "sites": [
+   "swapper_layout_data.py:1116"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Blur the VGG Mask for smoother transitions.",
+  "zh": "模糊 VGG 遮罩可获得更平滑的过渡。",
+  "sites": [
+   "swapper_layout_data.py:1123"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "VGG Mask Manipulation",
+  "zh": "VGG 遮罩操作 (VGG Mask Manipulation)",
+  "sites": [
+   "swapper_layout_data.py:1127"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Exclude Mask with VGG Model and lower limit / upper limit / strenght",
+  "zh": "使用 VGG 模型以及下限 / 上限 / 强度的排除遮罩。",
+  "sites": [
+   "swapper_layout_data.py:1131"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Threshold",
+  "zh": "阈值 (Threshold)",
+  "sites": [
+   "swapper_layout_data.py:1143"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Mask Features Exclude",
+  "zh": "遮罩特征排除 (Mask Features Exclude)",
+  "sites": [
+   "swapper_layout_data.py:1176"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Exclude Faceparts from Texture Transfere and uses the original Swap there. Combineable with VGG Mask",
+  "zh": "从纹理迁移中排除面部部位，并在这些部位使用原始换脸结果。可与 VGG 遮罩结合使用。",
+  "sites": [
+   "swapper_layout_data.py:1180"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Blend amount of rest of Face (without features)",
+  "zh": "面部其余部分（不含五官）的混合量。",
+  "sites": [
+   "swapper_layout_data.py:1191"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Excluded Features Blend",
+  "zh": "排除特征混合 (Excluded Features Blend)",
+  "sites": [
+   "swapper_layout_data.py:1195"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Blend Amount of Excluded Feature Areas",
+  "zh": "被排除五官区域的混合量。",
+  "sites": [
+   "swapper_layout_data.py:1202"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Eyebrows",
+  "zh": "眉毛 (Eyebrows)",
+  "sites": [
+   "swapper_layout_data.py:1206"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Exclude Faceparts (Eyes, Eyebrows, Nose, Mouth, Lips, Neck), 0=whole face is used, 1= Parts not included, 1+ = increase Parts size. Most of the time should be 1/1+. try 0 on low quality/artefacted targets",
+  "zh": "排除面部部件（眼睛、眉毛、鼻子、嘴巴、嘴唇、颈部），0=使用整个面部，1=不包括这些部件，1+=增大部件尺寸。大多数情况下应设为 1/1+。在低质量/有伪影的目标上尝试 0。",
+  "sites": [
+   "swapper_layout_data.py:1213",
+   "swapper_layout_data.py:1224",
+   "swapper_layout_data.py:1235",
+   "swapper_layout_data.py:1246",
+   "swapper_layout_data.py:1257"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Eyes",
+  "zh": "眼睛 (Eyes)",
+  "sites": [
+   "swapper_layout_data.py:1217"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Texture Mask Blur",
+  "zh": "纹理遮罩模糊 (Texture Mask Blur)",
+  "sites": [
+   "swapper_layout_data.py:1261"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Mask Blur on excluded Area Edges.",
+  "zh": "排除区域边缘的遮罩模糊。",
+  "sites": [
+   "swapper_layout_data.py:1268"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Background Exclude",
+  "zh": "背景排除 (Background Exclude)",
+  "sites": [
+   "swapper_layout_data.py:1272"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Background reduce for Texture Transfer Mask, usefull if xseg > 0",
+  "zh": "纹理传输遮罩的背景减少，在 xseg > 0 时很有用。",
+  "sites": [
+   "swapper_layout_data.py:1276"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Background reduce based on XSEG model on original face and faceparser background on swap face",
+  "zh": "基于原始面部的 XSEG 模型和交换面部的 faceparser 背景进行背景减少。",
+  "sites": [
+   "swapper_layout_data.py:1287"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "BG Blur",
+  "zh": "背景模糊 (BG Blur)",
+  "sites": [
+   "swapper_layout_data.py:1291"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Background reduce based on faceparser model on original face",
+  "zh": "基于原始面部的 faceparser 模型进行背景减少。",
+  "sites": [
+   "swapper_layout_data.py:1298"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "AutoColor Transfer",
+  "zh": "自动颜色迁移 (AutoColor Transfer)",
+  "sites": [
+   "swapper_layout_data.py:1302"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Enable AutoColor Transfer: 1. Hans Test without mask, 2. Hans Test with mask, 3. DFL Method without mask, 4. DFL Original Method.",
+  "zh": "启用自动颜色迁移：1. 无遮罩 Hans 测试，2. 有遮罩 Hans 测试，3. 无遮罩 DFL 方法，4. DFL 原始方法。",
+  "sites": [
+   "swapper_layout_data.py:1309"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Transfer Type",
+  "zh": "迁移类型 (Transfer Type)",
+  "sites": [
+   "swapper_layout_data.py:1313"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Blend Amount",
+  "zh": "混合量 (Blend Amount)",
+  "sites": [
+   "swapper_layout_data.py:1335",
+   "swapper_layout_data.py:1567",
+   "face_editor_layout_data.py:303",
+   "face_editor_layout_data.py:354",
+   "face_editor_layout_data.py:405",
+   "face_editor_layout_data.py:456"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adjust the blend value.",
+  "zh": "调整混合值。",
+  "sites": [
+   "swapper_layout_data.py:1342"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Enable Ending Color Transfer",
+  "zh": "启用结束颜色迁移 (Enable Ending Color Transfer)",
+  "sites": [
+   "swapper_layout_data.py:1346"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Enables a final color transfer pass after face restoration to match original skin tone.",
+  "zh": "启用人脸修复后的最终颜色迁移处理，以匹配原始肤色。",
+  "sites": [
+   "swapper_layout_data.py:1353"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Ending Transfer Type",
+  "zh": "结束迁移类型 (Ending Transfer Type)",
+  "sites": [
+   "swapper_layout_data.py:1357"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Ending Blend Amount",
+  "zh": "结束混合量 (Ending Blend Amount)",
+  "sites": [
+   "swapper_layout_data.py:1379"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Intensity of the ending color transfer (0-100%).",
+  "zh": "最终颜色迁移的强度（0-100%）。",
+  "sites": [
+   "swapper_layout_data.py:1386"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Color Adjustments",
+  "zh": "颜色调整 (Color Adjustments)",
+  "sites": [
+   "swapper_layout_data.py:1390"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Fine-tune the RGB color values of the swap.",
+  "zh": "微调换脸结果的 RGB 颜色值。",
+  "sites": [
+   "swapper_layout_data.py:1392"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Red",
+  "zh": "红色 (Red)",
+  "sites": [
+   "swapper_layout_data.py:1396",
+   "face_editor_layout_data.py:270",
+   "face_editor_layout_data.py:321",
+   "face_editor_layout_data.py:372",
+   "face_editor_layout_data.py:423"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Red color adjustments",
+  "zh": "红色颜色调整。",
+  "sites": [
+   "swapper_layout_data.py:1403"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Green",
+  "zh": "绿色 (Green)",
+  "sites": [
+   "swapper_layout_data.py:1407",
+   "face_editor_layout_data.py:281",
+   "face_editor_layout_data.py:332",
+   "face_editor_layout_data.py:383",
+   "face_editor_layout_data.py:434"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Green color adjustments",
+  "zh": "绿色颜色调整。",
+  "sites": [
+   "swapper_layout_data.py:1414"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Blue",
+  "zh": "蓝色 (Blue)",
+  "sites": [
+   "swapper_layout_data.py:1418",
+   "face_editor_layout_data.py:292",
+   "face_editor_layout_data.py:343",
+   "face_editor_layout_data.py:394",
+   "face_editor_layout_data.py:445"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Blue color adjustments",
+  "zh": "蓝色颜色调整",
+  "sites": [
+   "swapper_layout_data.py:1425"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Brightness",
+  "zh": "亮度 (Brightness)",
+  "sites": [
+   "swapper_layout_data.py:1429"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Changes the Brightness.",
+  "zh": "调整亮度",
+  "sites": [
+   "swapper_layout_data.py:1437"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Contrast",
+  "zh": "对比度 (Contrast)",
+  "sites": [
+   "swapper_layout_data.py:1441"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Changes the Contrast.",
+  "zh": "调整对比度",
+  "sites": [
+   "swapper_layout_data.py:1449"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Saturation",
+  "zh": "饱和度 (Saturation)",
+  "sites": [
+   "swapper_layout_data.py:1453"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Changes the Saturation.",
+  "zh": "调整饱和度",
+  "sites": [
+   "swapper_layout_data.py:1461"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Sharpness",
+  "zh": "锐度 (Sharpness)",
+  "sites": [
+   "swapper_layout_data.py:1465"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Changes the Sharpness.",
+  "zh": "调整锐度",
+  "sites": [
+   "swapper_layout_data.py:1473"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Hue",
+  "zh": "色相 (Hue)",
+  "sites": [
+   "swapper_layout_data.py:1477"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Changes the Hue.",
+  "zh": "调整色相",
+  "sites": [
+   "swapper_layout_data.py:1485"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Gamma",
+  "zh": "伽马 (Gamma)",
+  "sites": [
+   "swapper_layout_data.py:1489"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Changes the Gamma.",
+  "zh": "调整伽马",
+  "sites": [
+   "swapper_layout_data.py:1497"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Noise",
+  "zh": "噪点 (Noise)",
+  "sites": [
+   "swapper_layout_data.py:1501"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Add noise to swapped face.",
+  "zh": "为换脸后的面部添加噪点",
+  "sites": [
+   "swapper_layout_data.py:1507"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "JPEG Compression",
+  "zh": "JPEG 压缩 (JPEG Compression)",
+  "sites": [
+   "swapper_layout_data.py:1511"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Apply JPEG Compression to the swapped face to make output more realistic",
+  "zh": "对换脸后的面部应用 JPEG 压缩，使输出更逼真",
+  "sites": [
+   "swapper_layout_data.py:1513"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Compression",
+  "zh": "压缩 (Compression)",
+  "sites": [
+   "swapper_layout_data.py:1517"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adjust the JPEG Compression amount",
+  "zh": "调整 JPEG 压缩量",
+  "sites": [
+   "swapper_layout_data.py:1524"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Blend",
+  "zh": "混合 (Blend)",
+  "sites": [
+   "swapper_layout_data.py:1528",
+   "common_layout_data.py:60",
+   "common_layout_data.py:168",
+   "settings_layout_data.py:629"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Blend Amount for Jpeg Compression",
+  "zh": "JPEG 压缩混合量",
+  "sites": [
+   "swapper_layout_data.py:1535"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "MPEG Compression",
+  "zh": "MPEG 压缩 (MPEG Compression)",
+  "sites": [
+   "swapper_layout_data.py:1539"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Apply MPEG Compression like Block Shift Effect",
+  "zh": "应用类似块偏移效果的 MPEG 压缩",
+  "sites": [
+   "swapper_layout_data.py:1541"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Block Size",
+  "zh": "块大小 (Block Size)",
+  "sites": [
+   "swapper_layout_data.py:1545"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Size of (Pixel) Blocks",
+  "zh": "像素块大小",
+  "sites": [
+   "swapper_layout_data.py:1552"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Shift Maximum",
+  "zh": "最大位移 (Shift Maximum)",
+  "sites": [
+   "swapper_layout_data.py:1556"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Maximum Shift of each Block",
+  "zh": "每个块的最大位移",
+  "sites": [
+   "swapper_layout_data.py:1563"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Blend Amount",
+  "zh": "混合量",
+  "sites": [
+   "swapper_layout_data.py:1574"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Face Adjustments",
+  "zh": "面部调整 (Face Adjustments)",
+  "sites": [
+   "swapper_layout_data.py:1580"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "This is an experimental feature to perform direct adjustments to the face landmarks found by the detector. There is also an option to adjust the scale of the swapped face.",
+  "zh": "这是一项实验性功能，用于直接调整检测器检测到的面部关键点。另有一个选项可调整换脸后脸部的缩放。",
+  "sites": [
+   "swapper_layout_data.py:1582"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Keypoints X-Axis",
+  "zh": "关键点 X 轴 (Keypoints X-Axis)",
+  "sites": [
+   "swapper_layout_data.py:1586"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Shifts the detection points left and right.",
+  "zh": "左右移动检测点",
+  "sites": [
+   "swapper_layout_data.py:1593"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Keypoints Y-Axis",
+  "zh": "关键点 Y 轴 (Keypoints Y-Axis)",
+  "sites": [
+   "swapper_layout_data.py:1597"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Shifts the detection points up and down.",
+  "zh": "上下移动检测点",
+  "sites": [
+   "swapper_layout_data.py:1604"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Keypoints Scale",
+  "zh": "关键点缩放 (Keypoints Scale)",
+  "sites": [
+   "swapper_layout_data.py:1608"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Grows and shrinks the detection point distances.",
+  "zh": "增大或缩小检测点间距",
+  "sites": [
+   "swapper_layout_data.py:1615"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Face Scale Amount",
+  "zh": "面部缩放量 (Face Scale Amount)",
+  "sites": [
+   "swapper_layout_data.py:1619"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Grows and shrinks the entire face.",
+  "zh": "增大或缩小整个面部",
+  "sites": [
+   "swapper_layout_data.py:1626"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "5 - Keypoints Adjustments",
+  "zh": "5 - 关键点调整 (5 - Keypoints Adjustments)",
+  "sites": [
+   "swapper_layout_data.py:1630"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "This is an experimental feature to perform direct adjustments to the position of face landmarks found by the detector.",
+  "zh": "这是一项实验性功能，用于直接调整检测器检测到的面部关键点的位置。",
+  "sites": [
+   "swapper_layout_data.py:1632"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Left Eye:   X",
+  "zh": "左眼：   X (Left Eye:   X)",
+  "sites": [
+   "swapper_layout_data.py:1636"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Shifts the eye left detection point left and right.",
+  "zh": "左右移动左眼检测点",
+  "sites": [
+   "swapper_layout_data.py:1643"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Left Eye:   Y",
+  "zh": "左眼：   Y (Left Eye:   Y)",
+  "sites": [
+   "swapper_layout_data.py:1647"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Shifts the eye left detection point up and down.",
+  "zh": "上下移动左眼检测点",
+  "sites": [
+   "swapper_layout_data.py:1654"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Right Eye:   X",
+  "zh": "右眼：   X (Right Eye:   X)",
+  "sites": [
+   "swapper_layout_data.py:1658"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Shifts the eye right detection point left and right.",
+  "zh": "左右移动右眼检测点",
+  "sites": [
+   "swapper_layout_data.py:1665"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Right Eye:   Y",
+  "zh": "右眼：   Y (Right Eye:   Y)",
+  "sites": [
+   "swapper_layout_data.py:1669"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Shifts the eye right detection point up and down.",
+  "zh": "上下移动右眼检测点。",
+  "sites": [
+   "swapper_layout_data.py:1676"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Nose:   X",
+  "zh": "鼻子：   X (Nose:   X)",
+  "sites": [
+   "swapper_layout_data.py:1680"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Shifts the nose detection point left and right.",
+  "zh": "左右移动鼻子检测点。",
+  "sites": [
+   "swapper_layout_data.py:1687"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Nose:   Y",
+  "zh": "鼻子：   Y (Nose:   Y)",
+  "sites": [
+   "swapper_layout_data.py:1691"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Shifts the nose detection point up and down.",
+  "zh": "上下移动鼻子检测点。",
+  "sites": [
+   "swapper_layout_data.py:1698"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Left Mouth:   X",
+  "zh": "左嘴角：   X (Left Mouth:   X)",
+  "sites": [
+   "swapper_layout_data.py:1702"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Shifts the mouth left detection point left and right.",
+  "zh": "左右移动嘴巴左侧检测点。",
+  "sites": [
+   "swapper_layout_data.py:1709"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Left Mouth:   Y",
+  "zh": "左嘴角：   Y (Left Mouth:   Y)",
+  "sites": [
+   "swapper_layout_data.py:1713"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Shifts the mouth left detection point up and down.",
+  "zh": "上下移动嘴巴左侧检测点。",
+  "sites": [
+   "swapper_layout_data.py:1720"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Right Mouth:   X",
+  "zh": "右嘴角：   X (Right Mouth:   X)",
+  "sites": [
+   "swapper_layout_data.py:1724"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Shifts the mouth Right detection point left and right.",
+  "zh": "左右移动嘴巴右侧检测点。",
+  "sites": [
+   "swapper_layout_data.py:1731"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Right Mouth:   Y",
+  "zh": "右嘴角：   Y (Right Mouth:   Y)",
+  "sites": [
+   "swapper_layout_data.py:1735"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Shifts the mouth Right detection point up and down.",
+  "zh": "上下移动嘴巴右侧检测点。",
+  "sites": [
+   "swapper_layout_data.py:1742"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Final Blend (Whole Face)",
+  "zh": "最终混合（整张脸） (Final Blend (Whole Face))",
+  "sites": [
+   "swapper_layout_data.py:1748"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Apply a blur to the entire swapped face at the end of the pipeline.",
+  "zh": "在流程最后对整个换脸结果应用模糊。",
+  "sites": [
+   "swapper_layout_data.py:1750"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Final Blend Amount",
+  "zh": "最终混合量 (Final Blend Amount)",
+  "sites": [
+   "swapper_layout_data.py:1754"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adjust the overall final blur value applied to the entire face.",
+  "zh": "调整应用于整个面部的最终整体模糊值。",
+  "sites": [
+   "swapper_layout_data.py:1761"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Border Seam Blend",
+  "zh": "边缘接缝混合 (Border Seam Blend)",
+  "sites": [
+   "swapper_layout_data.py:1765"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Apply a localized blur strictly to the outer mask border to hide seams and hard cutoffs.",
+  "zh": "对蒙版外边界局部应用模糊，以隐藏接缝和硬边缘。",
+  "sites": [
+   "swapper_layout_data.py:1767"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Border Seam Blend Amount",
+  "zh": "边缘接缝混合量 (Border Seam Blend Amount)",
+  "sites": [
+   "swapper_layout_data.py:1771"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adjust the intensity and thickness of the border seam blur.",
+  "zh": "调整边界接缝模糊的强度和厚度。",
+  "sites": [
+   "swapper_layout_data.py:1778"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Overall Mask Blend Amount",
+  "zh": "整体遮罩混合量 (Overall Mask Blend Amount)",
+  "sites": [
+   "swapper_layout_data.py:1782"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Combined masks blending distance. It is not applied to the border masks.",
+  "zh": "组合蒙版的混合距离。不应用于边界蒙版。",
+  "sites": [
+   "swapper_layout_data.py:1787"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Enable Face Re-Aging",
+  "zh": "启用面部年龄重塑 (Enable Face Re-Aging)",
+  "sites": [
+   "swapper_layout_data.py:1793"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Apply age transformation to the assigned input (source) face before swapping. Use 'Apply' to re-compute embeddings and KV maps after adjusting the age sliders.",
+  "zh": "换脸前，对指定的输入（源）人脸应用年龄变换。调整年龄滑块后，点击“应用”以重新计算嵌入和键值映射。",
+  "sites": [
+   "swapper_layout_data.py:1795"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Source Age",
+  "zh": "源年龄 (Source Age)",
+  "sites": [
+   "swapper_layout_data.py:1800"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Approximate current age of the input face (0–100). Adjust this to match the actual age of the source person.",
+  "zh": "输入人脸的当前大致年龄（0–100）。调整此项以匹配源人物的实际年龄。",
+  "sites": [
+   "swapper_layout_data.py:1808"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Target Age",
+  "zh": "目标年龄 (Target Age)",
+  "sites": [
+   "swapper_layout_data.py:1812"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Target age to transform the input face to (0–100). Click 'Apply' after changing this value.",
+  "zh": "将输入人脸变换到的目标年龄（0–100）。更改此值后点击“应用”。",
+  "sites": [
+   "swapper_layout_data.py:1820"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Apply",
+  "zh": "应用 (Apply)",
+  "sites": [
+   "swapper_layout_data.py:1822"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Apply the age transformation to the input face and re-compute embeddings and KV maps.",
+  "zh": "对输入人脸应用年龄变换，并重新计算嵌入和键值映射。",
+  "sites": [
+   "swapper_layout_data.py:1824"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Enable Face Restorer",
+  "zh": "启用人脸修复器 (Enable Face Restorer)",
+  "sites": [
+   "common_layout_data.py:8"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Enable the use of a face restoration model to improve the quality of the face after swapping.",
+  "zh": "启用人脸修复模型，以改善换脸后的人脸质量。",
+  "sites": [
+   "common_layout_data.py:10",
+   "common_layout_data.py:112"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Restorer Type",
+  "zh": "修复器类型 (Restorer Type)",
+  "sites": [
+   "common_layout_data.py:16",
+   "common_layout_data.py:126"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Select the model type for face restoration.",
+  "zh": "选择人脸修复的模型类型。",
+  "sites": [
+   "common_layout_data.py:31",
+   "common_layout_data.py:141"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Alignment",
+  "zh": "对齐 (Alignment)",
+  "sites": [
+   "common_layout_data.py:37",
+   "common_layout_data.py:147"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Select the alignment method for restoring the face to its original or blended position.",
+  "zh": "选择将人脸恢复到原始位置或混合位置的对齐方法。",
+  "sites": [
+   "common_layout_data.py:42",
+   "common_layout_data.py:152"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Fidelity Weight",
+  "zh": "保真度权重 (Fidelity Weight)",
+  "sites": [
+   "common_layout_data.py:48",
+   "common_layout_data.py:156"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adjust the fidelity weight to control how closely the restoration preserves the original face details (For CodeFormer and VQFR-v2 only).",
+  "zh": "调整保真度权重，控制修复对原始人脸细节的保留程度（仅适用于 CodeFormer 和 VQFR-v2）。",
+  "sites": [
+   "common_layout_data.py:56"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Control the blend ratio between the restored face and the swapped face.",
+  "zh": "控制修复后人脸与换脸后人脸之间的混合比例。",
+  "sites": [
+   "common_layout_data.py:67",
+   "common_layout_data.py:175"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Auto Restore",
+  "zh": "自动修复 (Auto Restore)",
+  "sites": [
+   "common_layout_data.py:71"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Auto Adjust Restorer Blend Amount",
+  "zh": "自动调整修复器混合量",
+  "sites": [
+   "common_layout_data.py:75"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Adjust Sharpness",
+  "zh": "调整锐度 (Adjust Sharpness)",
+  "sites": [
+   "common_layout_data.py:79"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adjust sharp calc. mostly needed for over 0, which makes the swap sharper. depends on swap model, restorer model, resolution, face size,...",
+  "zh": "调整清晰度计算。通常需要设为大于 0，使换脸更清晰。取决于换脸模型、修复器模型、分辨率、人脸大小等。",
+  "sites": [
+   "common_layout_data.py:86",
+   "common_layout_data.py:194"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Sharpness Mask",
+  "zh": "锐度遮罩 (Sharpness Mask)",
+  "sites": [
+   "common_layout_data.py:90",
+   "common_layout_data.py:198"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Auto Adjust Restorer Blend Amount with sharpness Map",
+  "zh": "使用清晰度映射自动调整修复器混合量",
+  "sites": [
+   "common_layout_data.py:94",
+   "common_layout_data.py:202"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Mask Adjust",
+  "zh": "遮罩调整 (Mask Adjust)",
+  "sites": [
+   "common_layout_data.py:98",
+   "common_layout_data.py:206"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adjust Min/Max Blend value change from base auto Blend value",
+  "zh": "调整最小/最大混合值相对于基础自动混合值的变化量",
+  "sites": [
+   "common_layout_data.py:106",
+   "common_layout_data.py:214"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Enable Face Restorer 2",
+  "zh": "启用面部修复器 2 (Enable Face Restorer 2)",
+  "sites": [
+   "common_layout_data.py:110"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Apply at End",
+  "zh": "在末尾应用 (Apply at End)",
+  "sites": [
+   "common_layout_data.py:118"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Apply the second restorer at end of pipeline (after Face Editor to compensate the sharpness loss, befor final-blur and jpeg/mpeg-Compression. when disabled apply directly after first restorer like originaly.",
+  "zh": "在流程末端应用第二个修复器（在面部编辑器之后、最终模糊和 JPEG/MPEG 压缩之前，以补偿锐度损失；禁用时则像原始方式一样直接在第一个修复器之后应用）。",
+  "sites": [
+   "common_layout_data.py:122"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adjust the fidelity weight to control how closely the restoration preserves the original face details.",
+  "zh": "调整保真度权重，以控制修复保留原始面部细节的程度。",
+  "sites": [
+   "common_layout_data.py:164"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Auto Restore2",
+  "zh": "自动修复2 (Auto Restore2)",
+  "sites": [
+   "common_layout_data.py:179"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Auto Adjust Restorer2 Blend Amount",
+  "zh": "自动调整 Restorer2 混合量",
+  "sites": [
+   "common_layout_data.py:183"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "adjust sharpness",
+  "zh": "调整锐度 (adjust sharpness)",
+  "sites": [
+   "common_layout_data.py:187"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Pipeline Position",
+  "zh": "流水线位置 (Pipeline Position)",
+  "sites": [
+   "common_layout_data.py:220",
+   "face_editor_layout_data.py:7"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Select the Face Expression Restorer Editor position in the pipeline.",
+  "zh": "选择面部表情修复编辑器在流程中的位置。",
+  "sites": [
+   "common_layout_data.py:223"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Enable Face Expression Restorer",
+  "zh": "启用面部表情修复器 (Enable Face Expression Restorer)",
+  "sites": [
+   "common_layout_data.py:227"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Enabled the use of the LivePortrait face expression model to restore facial expressions after swapping.",
+  "zh": "启用 LivePortrait 面部表情模型，以在换脸后恢复面部表情。",
+  "sites": [
+   "common_layout_data.py:229"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Mode",
+  "zh": "模式 (Mode)",
+  "sites": [
+   "common_layout_data.py:235"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Choose 'Advanced' for fine-tuning and retargeting options. ",
+  "zh": "选择“高级”以获取微调和重定向选项。",
+  "sites": [
+   "common_layout_data.py:240"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Crop Scale",
+  "zh": "裁剪缩放 (Crop Scale)",
+  "sites": [
+   "common_layout_data.py:245",
+   "face_editor_layout_data.py:19"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Changes swap crop scale. Increase the value to capture the face more distantly. For Recast, best used around 1.5.",
+  "zh": "更改换脸裁剪缩放。增大该值可更远地捕捉面部。对于 Recast，最佳使用值约为 1.5。",
+  "sites": [
+   "common_layout_data.py:253"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "VY Ratio",
+  "zh": "VY 比率 (VY Ratio)",
+  "sites": [
+   "common_layout_data.py:257",
+   "face_editor_layout_data.py:29"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Changes the vy ratio for crop scale. Increase the value to capture the face more distantly.",
+  "zh": "更改裁剪缩放的 vy 比率。增大该值可更远地捕捉面部。",
+  "sites": [
+   "common_layout_data.py:265"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Recast Mode",
+  "zh": "重铸模式 (Recast Mode)",
+  "sites": [
+   "common_layout_data.py:270"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Enhancement overlays the driving expression onto the swapped face. ",
+  "zh": "增强会将驱动表情叠加到换脸后的面部上。",
+  "sites": [
+   "common_layout_data.py:277"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Animation Region",
+  "zh": "动画区域 (Animation Region)",
+  "sites": [
+   "common_layout_data.py:284",
+   "common_layout_data.py:452",
+   "common_layout_data.py:990"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Restricts expression transfer to a specific facial region (Eyes or Lips/Jaw). ",
+  "zh": "将表情迁移限制在特定面部区域（眼睛或嘴唇/下颌）。",
+  "sites": [
+   "common_layout_data.py:291"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Expression Strength",
+  "zh": "表情强度 (Expression Strength)",
+  "sites": [
+   "common_layout_data.py:296",
+   "common_layout_data.py:973"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Globally scales the intensity of the transferred expression. 0.0 retains the ",
+  "zh": "全局缩放所传递表情的强度。0.0 保留",
+  "sites": [
+   "common_layout_data.py:306"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Structural Flexibility",
+  "zh": "结构灵活性 (Structural Flexibility)",
+  "sites": [
+   "common_layout_data.py:312"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Advanced Mode Only: Independent multiplier for the rigid structural points (forehead, nose). ",
+  "zh": "仅高级模式：刚性结构点（前额、鼻子）的独立倍率。",
+  "sites": [
+   "common_layout_data.py:322"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Eye Driving Weight",
+  "zh": "眼部驱动权重 (Eye Driving Weight)",
+  "sites": [
+   "common_layout_data.py:328"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Advanced Mode Only: Independent multiplier for eye movement (blinks/squints/width). ",
+  "zh": "仅高级模式：眼部运动（眨眼/眯眼/宽度）的独立倍率。",
+  "sites": [
+   "common_layout_data.py:338"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Brows Driving Weight",
+  "zh": "眉毛驱动权重 (Brows Driving Weight)",
+  "sites": [
+   "common_layout_data.py:344"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Advanced Mode Only: Independent multiplier for eyebrow movement. ",
+  "zh": "仅高级模式：眉毛运动的独立倍率。",
+  "sites": [
+   "common_layout_data.py:354"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Cheeks Driving Weight",
+  "zh": "脸颊驱动权重 (Cheeks Driving Weight)",
+  "sites": [
+   "common_layout_data.py:360"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Advanced Mode Only: Independent multiplier for cheek dynamics (puffing, smile folds). ",
+  "zh": "仅高级模式：脸颊动态（鼓腮、笑纹）的独立倍率。",
+  "sites": [
+   "common_layout_data.py:370"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Lip Driving Weight",
+  "zh": "嘴唇驱动权重 (Lip Driving Weight)",
+  "sites": [
+   "common_layout_data.py:376"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Advanced Mode Only: Independent multiplier for lip movement, mouth opening, and smile width. ",
+  "zh": "仅高级模式：嘴唇运动、张嘴幅度和微笑宽度的独立倍率。",
+  "sites": [
+   "common_layout_data.py:386"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Jaw Driving Weight",
+  "zh": "下巴驱动权重 (Jaw Driving Weight)",
+  "sites": [
+   "common_layout_data.py:392"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Advanced Mode Only: Independent multiplier for jaw movement (talking, chin drops). ",
+  "zh": "仅高级模式：下巴运动（说话、下巴下移）的独立倍率。",
+  "sites": [
+   "common_layout_data.py:402"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Paste-back Feather",
+  "zh": "贴回羽化 (Paste-back Feather)",
+  "sites": [
+   "common_layout_data.py:408"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Feather the recast crop border so it blends into the surrounding ",
+  "zh": "羽化重裁剪边框，使其融入周围环境。",
+  "sites": [
+   "common_layout_data.py:418"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Neutral Factor",
+  "zh": "中性因子 (Neutral Factor)",
+  "sites": [
+   "common_layout_data.py:424"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Percentage of expression to add. Swapped Face already has some expression due to swap, adding complet expression is not recommended and slider should be lower than 1.0",
+  "zh": "要添加的表情百分比。换脸后的面部已因换脸带有一定表情，不建议添加完整表情，滑块应低于 1.0",
+  "sites": [
+   "common_layout_data.py:434",
+   "common_layout_data.py:522",
+   "common_layout_data.py:686",
+   "common_layout_data.py:734",
+   "common_layout_data.py:830"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Expression Factor",
+  "zh": "表情系数 (Expression Factor)",
+  "sites": [
+   "common_layout_data.py:438"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Control the expression similarity between the driving face and the swapped face.",
+  "zh": "控制驱动面部与换脸后面部之间的表情相似度。",
+  "sites": [
+   "common_layout_data.py:448"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "The facial region involved in the restoration process.",
+  "zh": "修复过程中涉及的面部区域。",
+  "sites": [
+   "common_layout_data.py:459"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Normalize Lips",
+  "zh": "嘴唇归一化 (Normalize Lips)",
+  "sites": [
+   "common_layout_data.py:463",
+   "common_layout_data.py:786",
+   "common_layout_data.py:1003"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Normalize the lips during the facial restoration process.",
+  "zh": "在面部修复过程中对嘴唇进行标准化。",
+  "sites": [
+   "common_layout_data.py:469",
+   "common_layout_data.py:792"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Normalize Lips Threshold",
+  "zh": "嘴唇归一化阈值 (Normalize Lips Threshold)",
+  "sites": [
+   "common_layout_data.py:473"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Threshold value for Normalize Lips.",
+  "zh": "嘴唇标准化的阈值。",
+  "sites": [
+   "common_layout_data.py:483",
+   "common_layout_data.py:806"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Micro-Expression Boost",
+  "zh": "微表情增强 (Micro-Expression Boost)",
+  "sites": [
+   "common_layout_data.py:488"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Amplifies movements when using Relative Motion. Default is 1.00.",
+  "zh": "使用相对运动时放大运动幅度。默认值为 1.00。",
+  "sites": [
+   "common_layout_data.py:498"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Restore The Eyes",
+  "zh": "修复眼部 (Restore The Eyes)",
+  "sites": [
+   "common_layout_data.py:502"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Activate the eyes face expression restorer",
+  "zh": "激活眼部面部表情修复器。",
+  "sites": [
+   "common_layout_data.py:508"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Neutral Eyes Factor",
+  "zh": "中性眼部系数 (Neutral Eyes Factor)",
+  "sites": [
+   "common_layout_data.py:512"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Camera Gaze Lock",
+  "zh": "摄像头注视锁定 (Camera Gaze Lock)",
+  "sites": [
+   "common_layout_data.py:526"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Forces the eyes to look directly at the camera. Overrides original and driving gaze.",
+  "zh": "强制眼睛直视摄像头。覆盖原始视线和驱动视线。",
+  "sites": [
+   "common_layout_data.py:532"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Gaze Strength",
+  "zh": "注视强度 (Gaze Strength)",
+  "sites": [
+   "common_layout_data.py:536"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Controls the strength of the camera gaze lock.",
+  "zh": "控制摄像头视线锁定的强度。",
+  "sites": [
+   "common_layout_data.py:546"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Gaze Vertical Fine-Tune",
+  "zh": "注视垂直微调 (Gaze Vertical Fine-Tune)",
+  "sites": [
+   "common_layout_data.py:550"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Micro-adjust the vertical gaze up or down to fix perceptual eye contact issues caused by eyelid shape.",
+  "zh": "微调垂直视线向上或向下，以修正因眼睑形状引起的感知眼神接触问题。",
+  "sites": [
+   "common_layout_data.py:560"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Relative Lids + Retargeted Gaze",
+  "zh": "相对眼睑 + 重定向注视 (Relative Lids + Retargeted Gaze)",
+  "sites": [
+   "common_layout_data.py:564"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Combines the eye motion from Relative Position with the gaze correction from Retargeting Eyes.\\n\\n- eyelid motion is biased toward Relative Position\\n- gaze direction is biased toward Retargeting Eyes\\n\\nEnabling this mode also turns on Relative Position and Retargeting Eyes.",
+  "zh": "结合相对位置的眼部运动与眼部重定向的视线校正。\n\n- 眼睑运动偏向相对位置\n- 视线方向偏向眼部重定向\n\n启用此模式还会同时开启相对位置和眼部重定向。",
+  "sites": [
+   "common_layout_data.py:570"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Relative Position",
+  "zh": "相对位置 (Relative Position)",
+  "sites": [
+   "common_layout_data.py:576",
+   "common_layout_data.py:690",
+   "common_layout_data.py:738",
+   "common_layout_data.py:834"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Makes the animation relative to the initial pose of the source image. Can be better for a more natural look.",
+  "zh": "使动画相对于源图像的初始姿态。可能有助于获得更自然的效果。",
+  "sites": [
+   "common_layout_data.py:582",
+   "common_layout_data.py:744"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Eyes Expression Factor",
+  "zh": "眼部表情系数 (Eyes Expression Factor)",
+  "sites": [
+   "common_layout_data.py:588"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Control the expression similarity between the driving face and the swapped face of the eyes.",
+  "zh": "控制驱动人脸与换脸人脸之间眼部表情的相似度。",
+  "sites": [
+   "common_layout_data.py:598"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Retargeting Eyes",
+  "zh": "眼部重定向 (Retargeting Eyes)",
+  "sites": [
+   "common_layout_data.py:602"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adjusting or redirecting the gaze or movement of the eyes during the facial restoration process.",
+  "zh": "在面部修复过程中调整或重定向眼睛的视线或运动。",
+  "sites": [
+   "common_layout_data.py:608"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Eyes Multiplier",
+  "zh": "眼部倍数 (Eyes Multiplier)",
+  "sites": [
+   "common_layout_data.py:614"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Multiplier value for Retargeting Eyes.",
+  "zh": "眼部重定向的倍率值。",
+  "sites": [
+   "common_layout_data.py:624"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Normalize Eyes",
+  "zh": "眼部归一化 (Normalize Eyes)",
+  "sites": [
+   "common_layout_data.py:628"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Normalize the Eyes during the facial restoration process.",
+  "zh": "在面部修复过程中对眼睛进行归一化。",
+  "sites": [
+   "common_layout_data.py:634"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Eyes Threshold",
+  "zh": "眼部阈值 (Eyes Threshold)",
+  "sites": [
+   "common_layout_data.py:638"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Threshold for the eye open ratio, it will dictate at wich open/close ratio it uses the modified faceutil function.",
+  "zh": "眼睛睁开比例的阈值，它将决定在何种睁/闭比例下使用修改后的 faceutil 函数。",
+  "sites": [
+   "common_layout_data.py:648"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Max Open Ratio",
+  "zh": "最大睁开比例 (Max Open Ratio)",
+  "sites": [
+   "common_layout_data.py:652"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Max eye open ratio that the target will have (<0.5 is best).",
+  "zh": "目标将具有的最大睁眼比率（<0.5 为最佳）。",
+  "sites": [
+   "common_layout_data.py:662"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Restore Brows",
+  "zh": "修复眉毛 (Restore Brows)",
+  "sites": [
+   "common_layout_data.py:666"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Activate the restoration of eyebrows.",
+  "zh": "激活眉毛修复。",
+  "sites": [
+   "common_layout_data.py:672"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Neutral Brows Factor",
+  "zh": "中性眉毛系数 (Neutral Brows Factor)",
+  "sites": [
+   "common_layout_data.py:676"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Makes the animation relative to the initial pose of the source image. Reduces geometric distortions on face shape.",
+  "zh": "使动画相对于源图像的初始姿态进行，减少人脸形状的几何失真。",
+  "sites": [
+   "common_layout_data.py:696",
+   "common_layout_data.py:840"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Brows Expression Factor",
+  "zh": "眉毛表情系数 (Brows Expression Factor)",
+  "sites": [
+   "common_layout_data.py:700"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Control the expression intensity for eyebrows.",
+  "zh": "控制眉毛的表情强度。",
+  "sites": [
+   "common_layout_data.py:710"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Restore The Lips",
+  "zh": "修复嘴唇 (Restore The Lips)",
+  "sites": [
+   "common_layout_data.py:714"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Activate the lips face expression restorer",
+  "zh": "激活嘴唇面部表情修复器。",
+  "sites": [
+   "common_layout_data.py:720"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Neutral Lips Factor",
+  "zh": "中性嘴唇系数 (Neutral Lips Factor)",
+  "sites": [
+   "common_layout_data.py:724"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Lips Expression Factor",
+  "zh": "嘴唇表情系数 (Lips Expression Factor)",
+  "sites": [
+   "common_layout_data.py:748"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Control the expression similarity between the driving face and the swapped face of the lips.",
+  "zh": "控制驱动人脸与换脸后嘴唇表情之间的相似度。",
+  "sites": [
+   "common_layout_data.py:758"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Retargeting Lips",
+  "zh": "嘴唇重定向 (Retargeting Lips)",
+  "sites": [
+   "common_layout_data.py:762"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adjusting or modifying the position, shape, or movement of the lips during the facial restoration process.",
+  "zh": "在人脸修复过程中调整或修改嘴唇的位置、形状或运动。",
+  "sites": [
+   "common_layout_data.py:768"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Lips Multiplier",
+  "zh": "嘴唇倍数 (Lips Multiplier)",
+  "sites": [
+   "common_layout_data.py:772"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Multiplier value for Retargeting Lips.",
+  "zh": "嘴唇重定向的乘数值。",
+  "sites": [
+   "common_layout_data.py:782"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Lips Threshold",
+  "zh": "嘴唇阈值 (Lips Threshold)",
+  "sites": [
+   "common_layout_data.py:796"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Restore General Face Features",
+  "zh": "恢复整体面部特征 (Restore General Face Features)",
+  "sites": [
+   "common_layout_data.py:810"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Activate the restoration of general expressions. (Comment or Uncomment face parts in frame_edits.py for more control)",
+  "zh": "激活通用表情修复。（在 frame_edits.py 中注释或取消注释面部部位可获得更多控制）",
+  "sites": [
+   "common_layout_data.py:816"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Neutral General Factor",
+  "zh": "中性整体因子 (Neutral General Factor)",
+  "sites": [
+   "common_layout_data.py:820"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Include Nose",
+  "zh": "包含鼻子 (Include Nose)",
+  "sites": [
+   "common_layout_data.py:844"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adds Nose Indices to the General Expression.",
+  "zh": "将鼻子索引添加到通用表情。",
+  "sites": [
+   "common_layout_data.py:850"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Include Jaw",
+  "zh": "包含下颌 (Include Jaw)",
+  "sites": [
+   "common_layout_data.py:854"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adds Jaw Indices to the General Expression.",
+  "zh": "将下颌索引添加到通用表情。",
+  "sites": [
+   "common_layout_data.py:860"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Include Cheek",
+  "zh": "包含脸颊 (Include Cheek)",
+  "sites": [
+   "common_layout_data.py:864"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adds Cheek Indices to the General Expression.",
+  "zh": "将脸颊索引添加到通用表情。",
+  "sites": [
+   "common_layout_data.py:870"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Include Contour",
+  "zh": "包含轮廓 (Include Contour)",
+  "sites": [
+   "common_layout_data.py:874"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adds Contour Indices to the General Expression.",
+  "zh": "向通用表达式添加轮廓索引。",
+  "sites": [
+   "common_layout_data.py:880"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Include Head top",
+  "zh": "包含头顶 (Include Head top)",
+  "sites": [
+   "common_layout_data.py:884"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adds Head Top Indices to the General Expression.",
+  "zh": "向通用表达式添加头顶索引。",
+  "sites": [
+   "common_layout_data.py:890"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "General Expression Factor",
+  "zh": "整体表情因子 (General Expression Factor)",
+  "sites": [
+   "common_layout_data.py:894"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Control the expression intensity for General Features.",
+  "zh": "控制通用特征的表情强度。",
+  "sites": [
+   "common_layout_data.py:904"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Enable Auto Mouth Expression",
+  "zh": "启用自动嘴部表情 (Enable Auto Mouth Expression)",
+  "sites": [
+   "common_layout_data.py:908"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Trigger Mode",
+  "zh": "触发模式 (Trigger Mode)",
+  "sites": [
+   "common_layout_data.py:922"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Confidence Threshold",
+  "zh": "置信度阈值 (Confidence Threshold)",
+  "sites": [
+   "common_layout_data.py:937"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "EMA Smoothing",
+  "zh": "EMA 平滑 (EMA Smoothing)",
+  "sites": [
+   "common_layout_data.py:956"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Exclude Upper Teeth Area",
+  "zh": "排除上牙区域 (Exclude Upper Teeth Area)",
+  "sites": [
+   "common_layout_data.py:1015"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Show Mouth Region Outline",
+  "zh": "显示嘴部区域轮廓 (Show Mouth Region Outline)",
+  "sites": [
+   "common_layout_data.py:1027"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Mouth Parser",
+  "zh": "嘴部解析器 (Mouth Parser)",
+  "sites": [
+   "common_layout_data.py:1038"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Upper Lip Parser",
+  "zh": "上唇解析器 (Upper Lip Parser)",
+  "sites": [
+   "common_layout_data.py:1053"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Lower Lip Parser",
+  "zh": "下唇解析器 (Lower Lip Parser)",
+  "sites": [
+   "common_layout_data.py:1068"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Theme",
+  "zh": "主题 (Theme)",
+  "sites": [
+   "settings_layout_data.py:25"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Select the theme to be used",
+  "zh": "选择要使用的主题。",
+  "sites": [
+   "settings_layout_data.py:41"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Providers Priority",
+  "zh": "提供者优先级 (Providers Priority)",
+  "sites": [
+   "settings_layout_data.py:49"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Select the providers priority to be used with the system.",
+  "zh": "选择用于系统的提供程序优先级。",
+  "sites": [
+   "settings_layout_data.py:52"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Number of Threads",
+  "zh": "线程数 (Number of Threads)",
+  "sites": [
+   "settings_layout_data.py:58"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Set number of execution threads while playing and recording. Depends strongly on GPU VRAM.",
+  "zh": "设置播放和录制时的执行线程数。很大程度上取决于 GPU 显存。",
+  "sites": [
+   "settings_layout_data.py:63"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Keep Controls Active",
+  "zh": "保持控件激活 (Keep Controls Active)",
+  "sites": [
+   "settings_layout_data.py:69"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Keep the controls active during recording.",
+  "zh": "录制期间保持控件可用。",
+  "sites": [
+   "settings_layout_data.py:71"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Track Markers on Video Seek",
+  "zh": "视频跳转时跟踪标记 (Track Markers on Video Seek)",
+  "sites": [
+   "settings_layout_data.py:75"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Update parameters and controls when seeking the video to reflect the options status for it's position.",
+  "zh": "在视频中定位时更新参数和控件，以反映该位置的选项状态。",
+  "sites": [
+   "settings_layout_data.py:77"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Resize Input Source",
+  "zh": "调整输入源大小 (Resize Input Source)",
+  "sites": [
+   "settings_layout_data.py:81"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Rescale the input video/image BEFORE processing.",
+  "zh": "处理前重新缩放输入视频/图像。",
+  "sites": [
+   "settings_layout_data.py:83"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Input Resolution Target",
+  "zh": "输入分辨率目标 (Input Resolution Target)",
+  "sites": [
+   "settings_layout_data.py:87"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Target height resolution (e.g. 720p). The aspect ratio is preserved.",
+  "zh": "目标高度分辨率（例如 720p）。宽高比保持不变。",
+  "sites": [
+   "settings_layout_data.py:92"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Frame Worker Delay",
+  "zh": "帧工作线程延迟 (Frame Worker Delay)",
+  "sites": [
+   "settings_layout_data.py:96"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Delay in seconds before AI processing when seeking in video. Prevents GPU overload and stuttering.",
+  "zh": "视频中定位时 AI 处理前的延迟（秒）。防止 GPU 过载和卡顿。",
+  "sites": [
+   "settings_layout_data.py:102"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Output to Target Location",
+  "zh": "输出到目标位置 (Output to Target Location)",
+  "sites": [
+   "settings_layout_data.py:108"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Save processed output next to the current target media instead of the global output folder.",
+  "zh": "将处理后的输出保存到当前目标媒体旁边，而不是全局输出文件夹。",
+  "sites": [
+   "settings_layout_data.py:110"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Preserve Source Directory Structure",
+  "zh": "保留源目录结构 (Preserve Source Directory Structure)",
+  "sites": [
+   "settings_layout_data.py:114"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "When loading targets from a folder recursively, mirror each target's parent subfolder path inside the output folder.",
+  "zh": "递归从文件夹加载目标时，在输出文件夹中镜像每个目标的父级子文件夹路径。",
+  "sites": [
+   "settings_layout_data.py:116"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Cluster Output by Source Name",
+  "zh": "按源名称分组输出 (Cluster Output by Source Name)",
+  "sites": [
+   "settings_layout_data.py:120"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Save processed output into a subfolder named after the selected merged embedding.",
+  "zh": "将处理后的输出保存到以所选合并嵌入命名的子文件夹中。",
+  "sites": [
+   "settings_layout_data.py:122"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Set Custom Video Playback FPS",
+  "zh": "设置自定义视频播放帧率 (Set Custom Video Playback FPS)",
+  "sites": [
+   "settings_layout_data.py:128"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Manually set the FPS used for video playback preview only (does not affect recording output FPS).",
+  "zh": "手动设置仅用于视频播放预览的 FPS（不影响录制输出 FPS）。",
+  "sites": [
+   "settings_layout_data.py:130"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Video Playback FPS",
+  "zh": "视频播放帧率 (Video Playback FPS)",
+  "sites": [
+   "settings_layout_data.py:136"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Set the maximum FPS of the video when playing",
+  "zh": "设置视频播放时的最大 FPS。",
+  "sites": [
+   "settings_layout_data.py:143"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Playback Buffering",
+  "zh": "播放缓冲 (Playback Buffering)",
+  "sites": [
+   "settings_layout_data.py:147"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Activates buffering for smoother video playback.",
+  "zh": "启用缓冲以实现更流畅的视频播放。",
+  "sites": [
+   "settings_layout_data.py:149"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Playback Loop",
+  "zh": "循环播放 (Playback Loop)",
+  "sites": [
+   "settings_layout_data.py:153"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Auto start over when video playing to the end.(Not work for recording)",
+  "zh": "视频播放到结尾时自动重新开始（对录制无效）。",
+  "sites": [
+   "settings_layout_data.py:155"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Theatre Mode Uses Fullscreen",
+  "zh": "剧场模式使用全屏 (Theatre Mode Uses Fullscreen)",
+  "sites": [
+   "settings_layout_data.py:159"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "When enabled, entering Theatre Mode also switches the window to fullscreen and restores the previous window state when Theatre Mode is turned off.",
+  "zh": "启用后，进入剧场模式时还会将窗口切换为全屏，并在关闭剧场模式时恢复之前的窗口状态。",
+  "sites": [
+   "settings_layout_data.py:161"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Frame Skip Step",
+  "zh": "跳帧步长 (Frame Skip Step)",
+  "sites": [
+   "settings_layout_data.py:165"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Number of frames to skip when using forward/rewind buttons or the mouse wheel.",
+  "zh": "使用前进/后退按钮或鼠标滚轮时跳过的帧数。",
+  "sites": [
+   "settings_layout_data.py:170"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Audio Playback Volume",
+  "zh": "音频播放音量 (Audio Playback Volume)",
+  "sites": [
+   "settings_layout_data.py:176"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Set the playback audio of the audio, when Live Sound is enabled",
+  "zh": "启用实时声音时，设置音频的播放设备。",
+  "sites": [
+   "settings_layout_data.py:182"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Audio Start Delay (Seconds)",
+  "zh": "音频开始延迟（秒） (Audio Start Delay (Seconds))",
+  "sites": [
+   "settings_layout_data.py:186"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Set the audio starting delay to adjust for latency.",
+  "zh": "设置音频起始延迟以补偿延迟。",
+  "sites": [
+   "settings_layout_data.py:192"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Confirm Before Stopping Recording",
+  "zh": "停止录制前确认 (Confirm Before Stopping Recording)",
+  "sites": [
+   "settings_layout_data.py:198"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Show a confirmation prompt before manually stopping a recording.",
+  "zh": "手动停止录制前显示确认提示。",
+  "sites": [
+   "settings_layout_data.py:200"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Limit Maximum Output FPS",
+  "zh": "限制最大输出帧率 (Limit Maximum Output FPS)",
+  "sites": [
+   "settings_layout_data.py:204"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "When enabled, recording limits output FPS to the configured maximum by sampling frames before processing.",
+  "zh": "启用后，录制会在处理前对帧进行采样，从而将输出 FPS 限制为配置的最大值。",
+  "sites": [
+   "settings_layout_data.py:206"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Maximum Output FPS",
+  "zh": "最大输出帧率 (Maximum Output FPS)",
+  "sites": [
+   "settings_layout_data.py:210"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Maximum FPS used for recording output when output FPS limiting is enabled.",
+  "zh": "启用输出帧率限制时用于录制输出的最大帧率。",
+  "sites": [
+   "settings_layout_data.py:217"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Frame resize to 1920*1080",
+  "zh": "帧调整为 1920*1080 (Frame resize to 1920*1080)",
+  "sites": [
+   "settings_layout_data.py:221"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Select to resize the video to 1920*1080 (only on 16/9 format)",
+  "zh": "选择将视频调整为 1920*1080（仅限 16/9 格式）",
+  "sites": [
+   "settings_layout_data.py:223"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Open Output Folder After Recording",
+  "zh": "录制后打开输出文件夹 (Open Output Folder After Recording)",
+  "sites": [
+   "settings_layout_data.py:227"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Opens the output folder after recording ends.",
+  "zh": "录制结束后打开输出文件夹。",
+  "sites": [
+   "settings_layout_data.py:229"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "HDR Encoding - Use on HDR videos only (CPU)",
+  "zh": "HDR 编码 - 仅用于 HDR 视频（CPU） (HDR Encoding - Use on HDR videos only (CPU))",
+  "sites": [
+   "settings_layout_data.py:233"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Encode the video file in HDR, uses CPU and libx256, slower processing.",
+  "zh": "以高动态范围编码视频文件，使用 CPU 和 libx256，处理速度较慢。",
+  "sites": [
+   "settings_layout_data.py:235"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "FFMpeg options",
+  "zh": "FFMpeg 选项 (FFMpeg options)",
+  "sites": [
+   "settings_layout_data.py:239"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Show FFMpeg options.",
+  "zh": "显示 FFMpeg 选项。",
+  "sites": [
+   "settings_layout_data.py:241"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Presets SDR",
+  "zh": "SDR 预设 (Presets SDR)",
+  "sites": [
+   "settings_layout_data.py:245"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "HEVC_NVENC presets, P1 = faster but lower quality → P7 = slower but better quality. Default = P5.",
+  "zh": "HEVC_NVENC 预设，P1 = 速度更快但质量较低 → P7 = 速度更慢但质量更好。默认值 = P5。",
+  "sites": [
+   "settings_layout_data.py:250"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Presets HDR",
+  "zh": "HDR 预设 (Presets HDR)",
+  "sites": [
+   "settings_layout_data.py:254"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "LIBx265 presets, Ultrafast = faster but lower quality → Veryslow = slower but better quality. Default = Slow.",
+  "zh": "LIBx265 预设，Ultrafast = 速度更快但质量较低 → Veryslow = 速度更慢但质量更好。默认值 = Slow。",
+  "sites": [
+   "settings_layout_data.py:268"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Quality",
+  "zh": "质量 (Quality)",
+  "sites": [
+   "settings_layout_data.py:272"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Constant quality slider, lower values = better quality but less encoding (bigger files). Default = 18.",
+  "zh": "恒定质量滑块，值越低 = 质量越好但编码越少（文件更大）。默认值 = 18。",
+  "sites": [
+   "settings_layout_data.py:279"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Auto-set quality from source",
+  "zh": "根据源自动设置质量 (Auto-set quality from source)",
+  "sites": [
+   "settings_layout_data.py:283"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Estimate source complexity with ffprobe and automatically set Quality from the source metrics for more consistent visual quality across mixed encodes. When enabled, the manual Quality slider is overridden; when disabled, manual Quality is used.",
+  "zh": "使用 ffprobe 评估源复杂度，并根据源指标自动设置质量，以便在混合编码中保持更一致的视觉质量。启用后，手动质量滑块将被覆盖；禁用后，使用手动质量。",
+  "sites": [
+   "settings_layout_data.py:287"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Spatial AQ",
+  "zh": "空间 AQ (Spatial AQ)",
+  "sites": [
+   "settings_layout_data.py:293"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Spatial AQ adjusts the QP within a single frame based on content complexity. It allocates more bits to detailed or textured areas and fewer bits to flat, uniform areas.",
+  "zh": "空间自适应量化根据内容复杂度在单个帧内调整量化参数。它为细节或纹理区域分配更多比特，为平坦均匀区域分配更少比特。",
+  "sites": [
+   "settings_layout_data.py:297"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Temporal AQ",
+  "zh": "时间 AQ (Temporal AQ)",
+  "sites": [
+   "settings_layout_data.py:301"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Temporal AQ adjusts the QP across multiple frames over time. It helps maintain a consistent visual quality by mitigating fluctuations in bitrate and quality between frames.",
+  "zh": "时间自适应量化随时间跨多个帧调整量化参数。它通过缓解帧间比特率和质量波动来帮助保持一致的视觉质量。",
+  "sites": [
+   "settings_layout_data.py:305"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Auto Swap",
+  "zh": "自动换脸 (Auto Swap)",
+  "sites": [
+   "settings_layout_data.py:311"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Automatically Swap all faces using selected Source Faces/Embeddings when loading an video/image file",
+  "zh": "加载视频/图像文件时，使用选定的源人脸/嵌入自动交换所有人脸",
+  "sites": [
+   "settings_layout_data.py:313"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Keep Selected Input Faces / Embeddings",
+  "zh": "保留选中的输入人脸 / 嵌入 (Keep Selected Input Faces / Embeddings)",
+  "sites": [
+   "settings_layout_data.py:317"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Keep the selected Input Faces Or Embeddings when switching Target Media.",
+  "zh": "切换目标媒体时保留选定的输入人脸或嵌入。",
+  "sites": [
+   "settings_layout_data.py:319"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Swap Input Face only once",
+  "zh": "仅交换输入人脸一次 (Swap Input Face only once)",
+  "sites": [
+   "settings_layout_data.py:323"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "only swap highest face match per face (not every match above treshold)",
+  "zh": "仅对每张人脸交换匹配度最高的人脸（而非每个超过阈值的匹配项）。",
+  "sites": [
+   "settings_layout_data.py:325"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Enable VR180 Mode",
+  "zh": "启用 VR180 模式 (Enable VR180 Mode)",
+  "sites": [
+   "settings_layout_data.py:329"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Enable VR180 mode. This will treat the input video as an equirectangular VR180 video and apply face swapping within perspective crops.",
+  "zh": "启用 VR180 模式。这会将输入视频视为等距柱状投影 VR180 视频，并在透视裁剪内应用换脸。",
+  "sites": [
+   "settings_layout_data.py:331"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "VR180 Eye Mode",
+  "zh": "VR180 眼部模式 (VR180 Eye Mode)",
+  "sites": [
+   "settings_layout_data.py:335"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Select 'Both Eyes' for standard VR180 video (left+right eye side-by-side). Select 'Single Eye' if the input video already contains only one eye's equirectangular view (full frame = one hemisphere).",
+  "zh": "标准 VR180 视频（左右眼并排）请选择“双眼”。如果输入视频已仅包含单眼的等距柱状投影视图（全帧等于一个半球），请选择“单眼”。",
+  "sites": [
+   "settings_layout_data.py:338"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "VR Tiled Face Detection",
+  "zh": "VR 分块人脸检测 (VR Tiled Face Detection)",
+  "sites": [
+   "settings_layout_data.py:344"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Run face detection on a grid of 24 undistorted perspective crops to catch faces missed by standard detection (faces near poles, the ±180° seam, head tilted back, or very close to the camera). Default ON — recommended for most VR content. Disable only when you are certain the standard detector finds every face you need.",
+  "zh": "在 24 个无畸变透视裁剪网格上运行人脸检测，以捕捉标准检测遗漏的人脸（靠近极点、±180° 接缝处、头部后仰或非常靠近相机的人脸）。默认开启——建议大多数 VR 内容使用。仅当您确定标准检测器能找到所需每张人脸时才禁用。",
+  "sites": [
+   "settings_layout_data.py:352"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "VR Max Crop FOV",
+  "zh": "VR 最大裁剪视场角 (VR Max Crop FOV)",
+  "sites": [
+   "settings_layout_data.py:358"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Maximum field-of-view for per-face perspective crops. Increase for close-up or near-camera faces (previously hard-capped at 100°). Default: 120°.",
+  "zh": "每张人脸透视裁剪的最大视场角。对于特写或靠近相机的人脸可增大此值（此前硬上限为 100°）。默认值：120°。",
+  "sites": [
+   "settings_layout_data.py:363"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "VR Crop Resolution",
+  "zh": "VR 裁剪分辨率 (VR Crop Resolution)",
+  "sites": [
+   "settings_layout_data.py:369"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Resolution of perspective crops used for face swapping. Higher values improve quality on high-resolution VR content at the cost of VRAM and processing time.",
+  "zh": "用于换脸的透视裁剪分辨率。较高的值可提升高分辨率 VR 内容的质量，但会占用更多显存并增加处理时间。",
+  "sites": [
+   "settings_layout_data.py:372"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Maximum DFM Models to use",
+  "zh": "要使用的最大 DFM 模型数 (Maximum DFM Models to use)",
+  "sites": [
+   "settings_layout_data.py:378"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Set the maximum number of DFM Models to keep in memory at a time. Set this based on your GPU's VRAM",
+  "zh": "设置一次在内存中保留的最大 DFM 模型数量。请根据显卡显存进行设置。",
+  "sites": [
+   "settings_layout_data.py:383"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Embedding Merge Method",
+  "zh": "嵌入合并方法 (Embedding Merge Method)",
+  "sites": [
+   "settings_layout_data.py:387"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Recognition Model",
+  "zh": "识别模型 (Recognition Model)",
+  "sites": [
+   "settings_layout_data.py:396"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Choose the ArcFace model to be used for comparing the similarity of faces.",
+  "zh": "选择用于比较人脸相似度的 ArcFace 模型。",
+  "sites": [
+   "settings_layout_data.py:404"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Face Detect Model",
+  "zh": "人脸检测模型 (Face Detect Model)",
+  "sites": [
+   "settings_layout_data.py:408"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Select the face detection model to use for detecting faces in the input image or video. 'Yolov11 VR180' and 'Yolov12 VR180' is trained for VR180 content.",
+  "zh": "选择用于检测输入图像或视频中人脸的人脸检测模型。'Yolov11 VR180' 和 'Yolov12 VR180' 针对 VR180 内容进行了训练。",
+  "sites": [
+   "settings_layout_data.py:418"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Detect Score",
+  "zh": "检测分数 (Detect Score)",
+  "sites": [
+   "settings_layout_data.py:422"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Set the confidence score threshold for face detection. Higher values ensure more confident detections but may miss some faces.",
+  "zh": "设置人脸检测的置信度阈值。较高的值可确保检测结果更可靠，但可能会漏掉一些人脸。",
+  "sites": [
+   "settings_layout_data.py:427"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Max No of Faces to Detect",
+  "zh": "要检测的最大人脸数 (Max No of Faces to Detect)",
+  "sites": [
+   "settings_layout_data.py:431"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Set the maximum number of faces to detect in a frame",
+  "zh": "设置一帧中要检测的最大人脸数量。",
+  "sites": [
+   "settings_layout_data.py:436"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Auto Rotation",
+  "zh": "自动旋转 (Auto Rotation)",
+  "sites": [
+   "settings_layout_data.py:440"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Automatically rotate the input to detect faces in various orientations.",
+  "zh": "自动旋转输入以检测各种方向的人脸。",
+  "sites": [
+   "settings_layout_data.py:442"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Manual Rotation",
+  "zh": "手动旋转 (Manual Rotation)",
+  "sites": [
+   "settings_layout_data.py:446"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Rotate the face detector to better detect faces at different angles.",
+  "zh": "旋转人脸检测器以更好地检测不同角度的人脸。",
+  "sites": [
+   "settings_layout_data.py:448"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Rotation Angle",
+  "zh": "旋转角度 (Rotation Angle)",
+  "sites": [
+   "settings_layout_data.py:452"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Set this to the angle of the input face angle to help with laying down/upside down/etc. Angles are read clockwise.",
+  "zh": "将此设置为输入人脸角度，以帮助处理躺下、倒置等情况。角度按顺时针读取。",
+  "sites": [
+   "settings_layout_data.py:459"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Enable Landmark Detection",
+  "zh": "启用关键点检测 (Enable Landmark Detection)",
+  "sites": [
+   "settings_layout_data.py:463"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Enable or disable facial landmark detection, which is used to refine face alignment.",
+  "zh": "启用或禁用人脸关键点检测，用于优化人脸对齐。",
+  "sites": [
+   "settings_layout_data.py:465"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Landmark Detect Model",
+  "zh": "关键点检测模型 (Landmark Detect Model)",
+  "sites": [
+   "settings_layout_data.py:471"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Select the landmark detection model, where different models detect varying numbers of facial landmarks.",
+  "zh": "选择关键点检测模型，不同模型检测的人脸关键点数量不同。",
+  "sites": [
+   "settings_layout_data.py:476"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Landmark Detect Score",
+  "zh": "关键点检测分数 (Landmark Detect Score)",
+  "sites": [
+   "settings_layout_data.py:482"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Set the confidence score threshold for facial landmark detection.",
+  "zh": "设置人脸关键点检测的置信度阈值。",
+  "sites": [
+   "settings_layout_data.py:489"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Detect From Points",
+  "zh": "从点检测 (Detect From Points)",
+  "sites": [
+   "settings_layout_data.py:493"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Enable detection of faces from specified landmark points.",
+  "zh": "启用基于指定关键点的人脸检测。",
+  "sites": [
+   "settings_layout_data.py:497"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Use Mean Eyes",
+  "zh": "使用平均眼位 (Use Mean Eyes)",
+  "sites": [
+   "settings_layout_data.py:501"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Increases stability by averaging multiple points for eyes (Recommended for 203/478 models).",
+  "zh": "通过对眼睛的多个点取平均值来提高稳定性（推荐用于 203/478 模型）。",
+  "sites": [
+   "settings_layout_data.py:505"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Show Landmarks",
+  "zh": "显示关键点 (Show Landmarks)",
+  "sites": [
+   "settings_layout_data.py:509"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Show Landmarks in realtime.",
+  "zh": "实时显示关键点。",
+  "sites": [
+   "settings_layout_data.py:511"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Show Bounding Boxes",
+  "zh": "显示边界框 (Show Bounding Boxes)",
+  "sites": [
+   "settings_layout_data.py:515"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Draw bounding boxes to all detected faces in the frame",
+  "zh": "为帧中所有检测到的人脸绘制边界框",
+  "sites": [
+   "settings_layout_data.py:517"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Enable KPS Smoothing",
+  "zh": "启用 KPS 平滑 (Enable KPS Smoothing)",
+  "sites": [
+   "settings_layout_data.py:521"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Enable temporal smoothing for facial keypoints (KPS) to reduce jittering and stabilize the face.",
+  "zh": "启用人脸关键点（KPS）的时间平滑，以减少抖动并稳定人脸。",
+  "sites": [
+   "settings_layout_data.py:523"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "EMA Alpha",
+  "zh": "EMA 阿尔法 (EMA Alpha)",
+  "sites": [
+   "settings_layout_data.py:527"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Controls the smoothing rigidity. Lower = more stable but lags, Higher = more responsive but may jitter. Default: 35.",
+  "zh": "控制平滑刚度。越低 = 更稳定但会滞后，越高 = 响应更快但可能抖动。默认值：35。",
+  "sites": [
+   "settings_layout_data.py:534"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Enable Face Tracking (ByteTrack)",
+  "zh": "启用 ByteTrack 面部跟踪 (Enable Face Tracking (ByteTrack))",
+  "sites": [
+   "settings_layout_data.py:540"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Uses ByteTrack to maintain face identities across frames. Improves stability during occlusions and allows lower detection thresholds.",
+  "zh": "使用 ByteTrack 跨帧保持人脸身份。在遮挡期间提高稳定性，并允许更低的检测阈值。",
+  "sites": [
+   "settings_layout_data.py:542"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Track Threshold",
+  "zh": "跟踪阈值 (Track Threshold)",
+  "sites": [
+   "settings_layout_data.py:548"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Minimum detection confidence to enter the high-confidence tracking pool (value ÷ 100). Lower values track more faces but may include false positives. Changing this resets the tracker.",
+  "zh": "进入高置信度跟踪池的最低检测置信度（值 ÷ 100）。值越低跟踪的人脸越多，但可能包含误检。修改此设置会重置跟踪器。",
+  "sites": [
+   "settings_layout_data.py:555"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Match Threshold",
+  "zh": "匹配阈值 (Match Threshold)",
+  "sites": [
+   "settings_layout_data.py:561"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "IoU overlap threshold for matching detections to existing tracks (value ÷ 100). Lower values allow looser matching across frames. Changing this resets the tracker.",
+  "zh": "将检测与现有轨迹匹配的交并比重叠阈值（值 ÷ 100）。较低的值允许跨帧进行更宽松的匹配。修改此设置会重置跟踪器。",
+  "sites": [
+   "settings_layout_data.py:568"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Track Buffer (Frames)",
+  "zh": "跟踪缓冲（帧） (Track Buffer (Frames))",
+  "sites": [
+   "settings_layout_data.py:574"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Number of frames a lost track is remembered before being removed. Higher values handle longer occlusions but use more memory. Changing this resets the tracker.",
+  "zh": "丢失轨迹在被移除前保留的帧数。较高的值可处理更长的遮挡，但会占用更多内存。修改此设置会重置跟踪器。",
+  "sites": [
+   "settings_layout_data.py:581"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Show ByteTrack Bounding Boxes",
+  "zh": "显示 ByteTrack 边界框 (Show ByteTrack Bounding Boxes)",
+  "sites": [
+   "settings_layout_data.py:587"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Draw ByteTrack tracked bounding boxes in orange. Use instead of 'Show Bounding Boxes' when face tracking is enabled.",
+  "zh": "用橙色绘制 ByteTrack 跟踪到的边界框。启用人脸跟踪时，使用此选项代替“显示边界框”。",
+  "sites": [
+   "settings_layout_data.py:589"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Enable Frame Enhancer",
+  "zh": "启用帧增强器 (Enable Frame Enhancer)",
+  "sites": [
+   "settings_layout_data.py:597"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Enable frame enhancement for video inputs to improve visual quality.",
+  "zh": "为视频输入启用帧增强，以提高视觉质量。",
+  "sites": [
+   "settings_layout_data.py:599"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Frame Enhancer Type",
+  "zh": "帧增强器类型 (Frame Enhancer Type)",
+  "sites": [
+   "settings_layout_data.py:605"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Select the type of frame enhancement to apply, based on the content and resolution requirements.",
+  "zh": "根据内容和分辨率要求，选择要应用的帧增强类型。",
+  "sites": [
+   "settings_layout_data.py:623"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Blends the enhanced results back into the original frame.",
+  "zh": "将增强后的结果混合回原始帧。",
+  "sites": [
+   "settings_layout_data.py:636"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Webcam Max No",
+  "zh": "摄像头最大编号 (Webcam Max No)",
+  "sites": [
+   "settings_layout_data.py:642"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Select the maximum number of webcam streams to allow for face swapping.",
+  "zh": "选择允许用于换脸的网络摄像头流的最大数量。",
+  "sites": [
+   "settings_layout_data.py:645"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Webcam Backend",
+  "zh": "摄像头后端 (Webcam Backend)",
+  "sites": [
+   "settings_layout_data.py:649"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Choose the backend for accessing webcam input.",
+  "zh": "选择用于访问网络摄像头输入的后端。",
+  "sites": [
+   "settings_layout_data.py:652"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Webcam Resolution",
+  "zh": "摄像头分辨率 (Webcam Resolution)",
+  "sites": [
+   "settings_layout_data.py:656"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Select the maximum resolution for webcam input.",
+  "zh": "选择网络摄像头输入的最大分辨率。",
+  "sites": [
+   "settings_layout_data.py:667"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Webcam FPS",
+  "zh": "摄像头帧率 (Webcam FPS)",
+  "sites": [
+   "settings_layout_data.py:671"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Set the maximum frames per second (FPS) for webcam input.",
+  "zh": "设置网络摄像头输入的最大帧率（帧/秒）。",
+  "sites": [
+   "settings_layout_data.py:674"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Send Frames to Virtual Camera",
+  "zh": "发送帧到虚拟摄像头 (Send Frames to Virtual Camera)",
+  "sites": [
+   "settings_layout_data.py:678"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Send the swapped video/webcam output to virtual camera for using in external applications",
+  "zh": "将换脸后的视频/网络摄像头输出发送到虚拟摄像头，以便在外部应用程序中使用。",
+  "sites": [
+   "settings_layout_data.py:680"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Virtual Camera Backend",
+  "zh": "虚拟摄像头后端 (Virtual Camera Backend)",
+  "sites": [
+   "settings_layout_data.py:686"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Choose the backend based on the Virtual Camera you have set up",
+  "zh": "根据您设置的虚拟摄像头选择后端。",
+  "sites": [
+   "settings_layout_data.py:689"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Keep Loaded Models in Memory",
+  "zh": "在内存中保留已加载模型 (Keep Loaded Models in Memory)",
+  "sites": [
+   "settings_layout_data.py:699"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Stops the models from automatically unloading when changing settings, only with CLEAR GPU button.",
+  "zh": "更改设置时阻止模型自动卸载，仅通过“清除 GPU”按钮卸载。",
+  "sites": [
+   "settings_layout_data.py:701"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Target Media Include Subfolders",
+  "zh": "目标媒体包含子文件夹 (Target Media Include Subfolders)",
+  "sites": [
+   "settings_layout_data.py:705"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Include all files from Subfolders when choosing Target Media Folder",
+  "zh": "选择目标媒体文件夹时包含子文件夹中的所有文件。",
+  "sites": [
+   "settings_layout_data.py:707"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Input Faces Include Subfolders",
+  "zh": "输入人脸包含子文件夹 (Input Faces Include Subfolders)",
+  "sites": [
+   "settings_layout_data.py:711"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Include all files from Subfolders when choosing Input Faces Folder",
+  "zh": "选择输入人脸文件夹时包含子文件夹中的所有文件。",
+  "sites": [
+   "settings_layout_data.py:713"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Save Output Image in JPG Format",
+  "zh": "以 JPG 格式保存输出图像 (Save Output Image in JPG Format)",
+  "sites": [
+   "settings_layout_data.py:717"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Saves the output image from Save Image or Batch Process to JPG format instead of PNG.",
+  "zh": "将“保存图像”或“批量处理”的输出图像保存为 JPG 格式，而非 PNG 格式。",
+  "sites": [
+   "settings_layout_data.py:719"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Auto Save Workspace",
+  "zh": "自动保存工作区 (Auto Save Workspace)",
+  "sites": [
+   "settings_layout_data.py:723"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Auto Saves Workspace .json in output folder at end of recording (only the status at end of recording)",
+  "zh": "录制结束时自动将工作区 .json 保存到输出文件夹（仅录制结束时的状态）。",
+  "sites": [
+   "settings_layout_data.py:725"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Auto Save Last Workspace",
+  "zh": "自动保存上次工作区 (Auto Save Last Workspace)",
+  "sites": [
+   "settings_layout_data.py:729"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Auto Saves last_workspace.json in the project root at end of recording (only the status at end of recording)",
+  "zh": "录制结束时自动将 last_workspace.json 保存到项目根目录（仅录制结束时的状态）。",
+  "sites": [
+   "settings_layout_data.py:731"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Auto Load Last Workspace",
+  "zh": "自动加载上次工作区 (Auto Load Last Workspace)",
+  "sites": [
+   "settings_layout_data.py:735"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Enable Mouse Wheel on Parameter Controls",
+  "zh": "启用参数控件上的鼠标滚轮 (Enable Mouse Wheel on Parameter Controls)",
+  "sites": [
+   "settings_layout_data.py:741"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "When enabled, the mouse wheel adjusts parameter sliders and dropdowns on hover.\\nWhen disabled, the mouse wheel scrolls the parameter panel instead.\\nHold Ctrl to temporarily adjust a hovered slider or dropdown while this is disabled.",
+  "zh": "启用后，鼠标滚轮在悬停时调整参数滑块和下拉菜单。\n禁用后，鼠标滚轮改为滚动参数面板。\n禁用时，按住 Ctrl 键可临时调整悬停的滑块或下拉菜单。",
+  "sites": [
+   "settings_layout_data.py:743"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Max Visible Frames",
+  "zh": "最大可见帧数 (Max Visible Frames)",
+  "sites": [
+   "settings_layout_data.py:747"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Maximum number of frames visible in the timeline at Max Zoom level.",
+  "zh": "最大缩放级别下时间轴中可见的最大帧数。",
+  "sites": [
+   "settings_layout_data.py:752"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Select the Face Pose/Expression Editor position in the pipeline.",
+  "zh": "选择人脸姿态/表情编辑器在流程中的位置。",
+  "sites": [
+   "face_editor_layout_data.py:15"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Changes source crop scale. Increase the value to capture the face more distantly. 2.2 scale factor for cropping driving video.",
+  "zh": "更改源裁剪比例。增大该值可从更远处捕捉人脸。裁剪驱动视频的比例因子为 2.2。",
+  "sites": [
+   "face_editor_layout_data.py:25"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Changes the vy ratio for crop scale. Increase the value to capture the face more distantly. -0.1 factor for cropping driving video.",
+  "zh": "更改裁剪比例的 vy 比率。增大该值可从更远处捕捉面部。裁剪驱动视频的系数为 -0.1。",
+  "sites": [
+   "face_editor_layout_data.py:35"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Blur Amount",
+  "zh": "模糊量 (Blur Amount)",
+  "sites": [
+   "face_editor_layout_data.py:39"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Blur amount.",
+  "zh": "模糊量。",
+  "sites": [
+   "face_editor_layout_data.py:44"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Enable Face Pose/Expression Editor",
+  "zh": "启用人脸姿态/表情编辑器 (Enable Face Pose/Expression Editor)",
+  "sites": [
+   "face_editor_layout_data.py:48"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Enable Face Pose/Expression Editor.",
+  "zh": "启用面部姿态/表情编辑器。",
+  "sites": [
+   "face_editor_layout_data.py:50"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Face Editor Type",
+  "zh": "人脸编辑器类型 (Face Editor Type)",
+  "sites": [
+   "face_editor_layout_data.py:54"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Select the target type to be edited in Face Editor.",
+  "zh": "选择要在面部编辑器中编辑的目标类型。",
+  "sites": [
+   "face_editor_layout_data.py:60"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Eyes Close <--> Open Ratio",
+  "zh": "眼睛闭合 <--> 睁开比例 (Eyes Close <--> Open Ratio)",
+  "sites": [
+   "face_editor_layout_data.py:64"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Changes the opening of the eyes.",
+  "zh": "更改眼睛的开合度。",
+  "sites": [
+   "face_editor_layout_data.py:72"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Lips Close <--> Open Ratio",
+  "zh": "嘴唇闭合 <--> 张开比例 (Lips Close <--> Open Ratio)",
+  "sites": [
+   "face_editor_layout_data.py:76"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Changes the opening of the lips.",
+  "zh": "更改嘴唇的开合度。",
+  "sites": [
+   "face_editor_layout_data.py:84",
+   "face_editor_layout_data.py:95"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Head Pitch",
+  "zh": "头部俯仰 (Head Pitch)",
+  "sites": [
+   "face_editor_layout_data.py:88"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Head Yaw",
+  "zh": "头部偏航 (Head Yaw)",
+  "sites": [
+   "face_editor_layout_data.py:99"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Changes the head yaw.",
+  "zh": "更改头部偏航角。",
+  "sites": [
+   "face_editor_layout_data.py:106"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Head Roll",
+  "zh": "头部滚转 (Head Roll)",
+  "sites": [
+   "face_editor_layout_data.py:110"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Changes the head roll.",
+  "zh": "更改头部滚转角。",
+  "sites": [
+   "face_editor_layout_data.py:117"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "X-Axis Movement",
+  "zh": "X轴移动 (X-Axis Movement)",
+  "sites": [
+   "face_editor_layout_data.py:121"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Changes the head direction x-axis.",
+  "zh": "更改头部 x 轴方向。",
+  "sites": [
+   "face_editor_layout_data.py:129"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Y-Axis Movement",
+  "zh": "Y轴移动 (Y-Axis Movement)",
+  "sites": [
+   "face_editor_layout_data.py:133"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Changes the head direction y-axis.",
+  "zh": "更改头部 y 轴方向。",
+  "sites": [
+   "face_editor_layout_data.py:141"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Z-Axis Movement",
+  "zh": "Z轴移动 (Z-Axis Movement)",
+  "sites": [
+   "face_editor_layout_data.py:145"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Changes the head direction z-axis.",
+  "zh": "更改头部 z 轴方向。",
+  "sites": [
+   "face_editor_layout_data.py:153"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Mouth Pouting",
+  "zh": "嘴巴撅起 (Mouth Pouting)",
+  "sites": [
+   "face_editor_layout_data.py:157"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Pouting the mouth.",
+  "zh": "噘嘴。",
+  "sites": [
+   "face_editor_layout_data.py:165"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Mouth Pursing",
+  "zh": "嘴巴抿起 (Mouth Pursing)",
+  "sites": [
+   "face_editor_layout_data.py:169"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Pursing the mouth.",
+  "zh": "噘嘴。",
+  "sites": [
+   "face_editor_layout_data.py:177"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Mouth Grin",
+  "zh": "嘴巴咧嘴 (Mouth Grin)",
+  "sites": [
+   "face_editor_layout_data.py:181"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Changes the mouth grin.",
+  "zh": "改变嘴部咧嘴。",
+  "sites": [
+   "face_editor_layout_data.py:189"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Lips Close <--> Open Value",
+  "zh": "嘴唇闭合 <--> 张开值 (Lips Close <--> Open Value)",
+  "sites": [
+   "face_editor_layout_data.py:193"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Changes the closing or opening of the lips.",
+  "zh": "改变嘴唇的闭合或张开。",
+  "sites": [
+   "face_editor_layout_data.py:200"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Mouth Smile",
+  "zh": "嘴巴微笑 (Mouth Smile)",
+  "sites": [
+   "face_editor_layout_data.py:204"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Changes the mouth smile.",
+  "zh": "改变嘴部微笑。",
+  "sites": [
+   "face_editor_layout_data.py:212"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Eye Wink",
+  "zh": "眨眼 (Eye Wink)",
+  "sites": [
+   "face_editor_layout_data.py:216"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Winking eye.",
+  "zh": "眨眼。",
+  "sites": [
+   "face_editor_layout_data.py:224"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "EyeBrows Direction",
+  "zh": "眉毛方向 (EyeBrows Direction)",
+  "sites": [
+   "face_editor_layout_data.py:228"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Changes the eyebrows direction.",
+  "zh": "改变眉毛方向。",
+  "sites": [
+   "face_editor_layout_data.py:236"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "EyeGaze Horizontal",
+  "zh": "眼睛注视水平 (EyeGaze Horizontal)",
+  "sites": [
+   "face_editor_layout_data.py:240"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Changes the horizontal eyegaze direction.",
+  "zh": "改变水平视线方向。",
+  "sites": [
+   "face_editor_layout_data.py:248"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "EyeGaze Vertical",
+  "zh": "眼睛注视垂直 (EyeGaze Vertical)",
+  "sites": [
+   "face_editor_layout_data.py:252"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Changes the vertical eyegaze direction.",
+  "zh": "改变垂直视线方向。",
+  "sites": [
+   "face_editor_layout_data.py:260"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Face Makeup",
+  "zh": "面部妆容 (Face Makeup)",
+  "sites": [
+   "face_editor_layout_data.py:264"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Enable face makeup. Except for hair, eyebrows, eyes and lips.",
+  "zh": "启用面部妆容。不包括头发、眉毛、眼睛和嘴唇。",
+  "sites": [
+   "face_editor_layout_data.py:266"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Red color adjustments.",
+  "zh": "红色调整。",
+  "sites": [
+   "face_editor_layout_data.py:277",
+   "face_editor_layout_data.py:328",
+   "face_editor_layout_data.py:379",
+   "face_editor_layout_data.py:430"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Green color adjustments.",
+  "zh": "绿色调整。",
+  "sites": [
+   "face_editor_layout_data.py:288",
+   "face_editor_layout_data.py:339",
+   "face_editor_layout_data.py:390",
+   "face_editor_layout_data.py:441"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Blue color adjustments.",
+  "zh": "蓝色调整。",
+  "sites": [
+   "face_editor_layout_data.py:299",
+   "face_editor_layout_data.py:350",
+   "face_editor_layout_data.py:401",
+   "face_editor_layout_data.py:452"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Blend the value: 0.00 represents the original color, 1.00 represents the full target color.",
+  "zh": "混合值：0.00 表示原始颜色，1.00 表示完整目标颜色。",
+  "sites": [
+   "face_editor_layout_data.py:311",
+   "face_editor_layout_data.py:362",
+   "face_editor_layout_data.py:413"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Hair Makeup",
+  "zh": "头发妆容 (Hair Makeup)",
+  "sites": [
+   "face_editor_layout_data.py:315"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Enable hair makeup.",
+  "zh": "启用头发妆容。",
+  "sites": [
+   "face_editor_layout_data.py:317"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "EyeBrows Makeup",
+  "zh": "眉毛妆容 (EyeBrows Makeup)",
+  "sites": [
+   "face_editor_layout_data.py:366"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Enable eyebrows makeup.",
+  "zh": "启用眉毛妆容。",
+  "sites": [
+   "face_editor_layout_data.py:368"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Lips Makeup",
+  "zh": "嘴唇妆容 (Lips Makeup)",
+  "sites": [
+   "face_editor_layout_data.py:417"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Enable lips makeup.",
+  "zh": "启用嘴唇妆容。",
+  "sites": [
+   "face_editor_layout_data.py:419"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Blend the value: 0.0 represents the original color, 1.0 represents the full target color.",
+  "zh": "混合值：0.0 表示原始颜色，1.0 表示完整目标颜色。",
+  "sites": [
+   "face_editor_layout_data.py:464"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Exclusive Reference Path",
+  "zh": "专属参考路径 (Exclusive Reference Path)",
+  "sites": [
+   "denoiser_layout_data.py:9"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "If enabled, forces the UNet to use only reference K/V for attention, maximizing focus on the reference features.",
+  "zh": "启用后，强制 UNet 仅使用参考 K/V 进行注意力计算，最大程度聚焦于参考特征。",
+  "sites": [
+   "denoiser_layout_data.py:12"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Average K/V",
+  "zh": "平均 K/V (Average K/V)",
+  "sites": [
+   "denoiser_layout_data.py:19"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Uses an Average of K/V maps or the Full concatenated K/V maps.",
+  "zh": "使用 K/V 图的平均值或完整拼接的 K/V 图。",
+  "sites": [
+   "denoiser_layout_data.py:22"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Color Correction",
+  "zh": "颜色校正 (Color Correction)",
+  "sites": [
+   "denoiser_layout_data.py:29"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Enable color correction for the denoiser.",
+  "zh": "启用去噪器的颜色校正。",
+  "sites": [
+   "denoiser_layout_data.py:32"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Base Seed",
+  "zh": "基础种子 (Base Seed)",
+  "sites": [
+   "denoiser_layout_data.py:37"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Set a fixed base seed for the denoiser. This seed will be used for all frames and both denoiser passes (if applicable) to ensure consistent noise patterns.",
+  "zh": "为去噪器设置固定基础种子。该种子将用于所有帧和两次去噪过程（如适用），以确保噪声模式一致。",
+  "sites": [
+   "denoiser_layout_data.py:43"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Enable Denoiser before Restorers",
+  "zh": "在修复器之前启用降噪器 (Enable Denoiser before Restorers)",
+  "sites": [
+   "denoiser_layout_data.py:48"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Enable UNet-based image denoising. This is applied to the 512x512 aligned/swapped face before other restorers.",
+  "zh": "启用基于 UNet 的图像去噪。该操作会在其他修复器之前应用于 512x512 对齐/换脸后的人脸。",
+  "sites": [
+   "denoiser_layout_data.py:51"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Denoiser Mode (Before)",
+  "zh": "降噪器模式（之前） (Denoiser Mode (Before))",
+  "sites": [
+   "denoiser_layout_data.py:58"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Denoising mode for the pass before restorers. Single Step is generally faster.",
+  "zh": "修复器之前阶段的去噪模式。单步通常更快。",
+  "sites": [
+   "denoiser_layout_data.py:64"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Single Step Timestep (t) (Before)",
+  "zh": "单步时间步 (t)（之前） (Single Step Timestep (t) (Before))",
+  "sites": [
+   "denoiser_layout_data.py:69"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Timestep for single-step denoising (Before Restorers). Lower values mean less noise added/removed.",
+  "zh": "单步去噪（在修复器之前）的时间步。值越低，添加/去除的噪声越少。",
+  "sites": [
+   "denoiser_layout_data.py:79"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "DDIM Steps (Before)",
+  "zh": "DDIM 步数（之前） (DDIM Steps (Before))",
+  "sites": [
+   "denoiser_layout_data.py:84"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Number of DDIM steps for full restoration (Before Restorers). Higher = more detail, slower.",
+  "zh": "完整修复（修复器之前）的 DDIM 步数。值越高，细节越多，速度越慢。",
+  "sites": [
+   "denoiser_layout_data.py:94"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "CFG Scale (Before)",
+  "zh": "CFG 强度（之前） (CFG Scale (Before))",
+  "sites": [
+   "denoiser_layout_data.py:99"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Classifier-Free Guidance scale for DDIM (Before Restorers). Higher = stronger adherence to K/V.",
+  "zh": "DDIM 的无分类器引导系数（修复器之前）。值越高，对键/值的遵循度越高。",
+  "sites": [
+   "denoiser_layout_data.py:110"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Latent Sharpening (Before)",
+  "zh": "潜空间锐化（之前） (Latent Sharpening (Before))",
+  "sites": [
+   "denoiser_layout_data.py:115"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Enhances fine details directly in the latent space before decoding.",
+  "zh": "在解码前直接增强潜空间中的细节。",
+  "sites": [
+   "denoiser_layout_data.py:124",
+   "denoiser_layout_data.py:206"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Enable Denoiser After first Restorer",
+  "zh": "在第一个修复器之后启用降噪器 (Enable Denoiser After first Restorer)",
+  "sites": [
+   "denoiser_layout_data.py:130"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Apply the UNet Denoiser again after first restorer have been applied. Uses the same UNet model and step settings.",
+  "zh": "在应用第一个修复器后再次应用 U型网络去噪器。使用相同的 U型网络模型和步数设置。",
+  "sites": [
+   "denoiser_layout_data.py:133"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Denoiser Mode (After)",
+  "zh": "降噪器模式（之后） (Denoiser Mode (After))",
+  "sites": [
+   "denoiser_layout_data.py:140",
+   "denoiser_layout_data.py:222"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Denoising mode for the pass after first restorer. Single Step is generally faster.",
+  "zh": "第一个修复器之后这一轮的去噪模式。单步通常更快。",
+  "sites": [
+   "denoiser_layout_data.py:146"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Single Step Timestep (t) (After)",
+  "zh": "单步时间步 (t)（之后） (Single Step Timestep (t) (After))",
+  "sites": [
+   "denoiser_layout_data.py:151",
+   "denoiser_layout_data.py:233"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Timestep for single-step denoising (After first Restorer). Lower values mean less noise added/removed.",
+  "zh": "单步去噪的时间步（第一个修复器之后）。值越低，添加/移除的噪声越少。",
+  "sites": [
+   "denoiser_layout_data.py:161"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "DDIM Steps (After First)",
+  "zh": "DDIM 步数（第一个之后） (DDIM Steps (After First))",
+  "sites": [
+   "denoiser_layout_data.py:166"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Number of DDIM steps for full restoration (After First Restorer). Higher = more detail, slower.",
+  "zh": "完整修复（第一个修复器之后）的 DDIM 步数。值越高，细节越多，速度越慢。",
+  "sites": [
+   "denoiser_layout_data.py:176"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "CFG Scale (After First)",
+  "zh": "CFG 强度（第一个之后） (CFG Scale (After First))",
+  "sites": [
+   "denoiser_layout_data.py:181"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Classifier-Free Guidance scale for DDIM (After First Restorer). Higher = stronger adherence to K/V.",
+  "zh": "DDIM 的无分类器引导系数（第一个修复器之后）。值越高，对键/值的遵循度越高。",
+  "sites": [
+   "denoiser_layout_data.py:192"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Latent Sharpening (After First)",
+  "zh": "潜空间锐化（第一个之后） (Latent Sharpening (After First))",
+  "sites": [
+   "denoiser_layout_data.py:197"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Enable Denoiser After Restorers",
+  "zh": "在修复器之后启用降噪器 (Enable Denoiser After Restorers)",
+  "sites": [
+   "denoiser_layout_data.py:212"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Apply the UNet Denoiser again after face restorers have been applied. Uses the same UNet model and step settings.",
+  "zh": "在应用人脸修复器后再次应用 U型网络去噪器。使用相同的 U型网络模型和步数设置。",
+  "sites": [
+   "denoiser_layout_data.py:215"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Denoising mode for the pass after restorers. Single Step is generally faster.",
+  "zh": "修复器之后这一轮的去噪模式。单步通常更快。",
+  "sites": [
+   "denoiser_layout_data.py:228"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Timestep for single-step denoising (After Restorers). Lower values mean less noise added/removed.",
+  "zh": "单步去噪的时间步（修复器之后）。值越低，添加/移除的噪声越少。",
+  "sites": [
+   "denoiser_layout_data.py:243"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "DDIM Steps (After)",
+  "zh": "DDIM 步数（之后） (DDIM Steps (After))",
+  "sites": [
+   "denoiser_layout_data.py:248"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Number of DDIM steps for full restoration (After Restorers). Higher = more detail, slower.",
+  "zh": "完整修复（修复器之后）的 DDIM 步数。值越高，细节越多，速度越慢。",
+  "sites": [
+   "denoiser_layout_data.py:258"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "CFG Scale (After)",
+  "zh": "CFG 强度（之后） (CFG Scale (After))",
+  "sites": [
+   "denoiser_layout_data.py:263"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Classifier-Free Guidance scale for DDIM (After Restorers). Higher = stronger adherence to K/V.",
+  "zh": "DDIM（在修复器之后）的无分类器引导强度。越高表示对 K/V 的遵循越强。",
+  "sites": [
+   "denoiser_layout_data.py:274"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Latent Sharpening (After)",
+  "zh": "潜空间锐化（之后） (Latent Sharpening (After))",
+  "sites": [
+   "denoiser_layout_data.py:279"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Enhances fine details directly in the latent space before decoding. Recommended: 0.15.",
+  "zh": "在解码前直接在潜空间中增强细节。推荐值：0.15。",
+  "sites": [
+   "denoiser_layout_data.py:288"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Sharpens the original face befor swapping. can sometimes be usefull. care it can tamper with \"Auto Face Restorer\"!",
+  "zh": "换脸前锐化原始面部。有时可能有用。注意它可能干扰“自动面部修复器”！",
+  "sites": [
+   "swapper_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Defines lower Limit for diffing mask. Check \"View Face Mask\" with \"mask show -> diff\" to see effect.",
+  "zh": "定义差异遮罩的下限。在“查看面部遮罩”中勾选“遮罩显示 -> 差异”可查看效果。",
+  "sites": [
+   "swapper_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Defines upper Limit for diffing mask. Check \"View Face Mask\" with \"mask show -> diff\" to see effect.",
+  "zh": "定义差异遮罩的上限。在“查看面部遮罩”中勾选“遮罩显示 -> 差异”可查看效果。",
+  "sites": [
+   "swapper_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Defines the blending between swap and original for pixels under \"Difference Lower Limit\" in transfer mask. Check \"View Face Mask\" with \"mask show -> diff\" to see effect.",
+  "zh": "定义迁移遮罩中低于“差异下限”的像素在换脸结果与原始图像之间的混合程度。在“查看面部遮罩”中勾选“遮罩显示 -> 差异”可查看效果。",
+  "sites": [
+   "swapper_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Defines the blending between swap and original for pixels over \"Difference Upper Limit\" in transfer mask. Check \"View Face Mask\" with \"mask show -> diff\" to see effect.",
+  "zh": "定义迁移遮罩中高于“差异上限”的像素在换脸结果与原始图像之间的混合程度。在“查看面部遮罩”中勾选“遮罩显示 -> 差异”可查看效果。",
+  "sites": [
+   "swapper_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Defines the strenght of parts over \"Face Features Upper Limit\" in transfer mask. Check \"View Face Mask\" with \"mask show -> texture\" to see effect.",
+  "zh": "定义迁移遮罩中高于“面部特征上限”区域的强度。在“查看面部遮罩”中勾选“遮罩显示 -> 纹理”可查看效果。",
+  "sites": [
+   "swapper_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Defines Limit for vgg transfer mask. Check \"View Face Mask\" with \"mask show -> texture\" to see effect.",
+  "zh": "定义 VGG 迁移遮罩的限制。在“查看面部遮罩”中勾选“遮罩显示 -> 纹理”可查看效果。",
+  "sites": [
+   "swapper_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Select the AutoColor transfer method type :\nTest → CDF Histogram = Exact Cumulative Distribution Function matching in RGB space.\nTest_Mask → CDF Histogram (Masked) = Exact CDF matching, bounded by the face mask.\nDFL_Test → Reinhard Transfer = Mean/Variance statistical transfer in LAB color space.\nDFL_Orig → Reinhard Transfer (Masked) = Mean/Variance transfer in LAB space, ignoring padding.\nAdaIN_Statistical → AdaIN (Core Masked) = Adaptive Instance Normalization with soft-mask erosion.",
+  "zh": "选择自动颜色迁移方法类型：\n测试 → CDF 直方图 = 在 RGB 空间中精确匹配累积分布函数。\n测试遮罩 → CDF 直方图（遮罩）= 精确 CDF 匹配，受面部遮罩限制。\nDFL 测试 → Reinhard 迁移 = 在 LAB 颜色空间中进行均值/方差统计迁移。\nDFL 原始 → Reinhard 迁移（遮罩）= 在 LAB 空间中进行均值/方差迁移，忽略填充区域。\nAdaIN 统计 → AdaIN（核心遮罩）= 带软遮罩腐蚀的自适应实例归一化。",
+  "sites": [
+   "swapper_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Select the Ending AutoColor transfer method type :\nTest →\tCDF Histogram = Exact Cumulative Distribution Function matching in RGB space.\nTest_Mask → CDF Histogram (Masked) = Exact CDF matching, bounded by the face mask.\nDFL_Test → Reinhard Transfer = Mean/Variance statistical transfer in LAB color space.\nDFL_Orig →\tReinhard Transfer (Masked) = Mean/Variance transfer in LAB space, ignoring padding.\nAdaIN_Statistical → AdaIN (Core Masked) = Adaptive Instance Normalization with soft-mask erosion.",
+  "zh": "选择最终自动颜色迁移方法类型：\n测试 → CDF 直方图 = 在 RGB 空间中精确匹配累积分布函数。\n测试遮罩 → CDF 直方图（遮罩）= 精确 CDF 匹配，受面部遮罩限制。\nDFL 测试 → Reinhard 迁移 = 在 LAB 颜色空间中进行均值/方差统计迁移。\nDFL 原始 → Reinhard 迁移（遮罩）= 在 LAB 空间中进行均值/方差迁移，忽略填充区域。\nAdaIN 统计 → AdaIN（核心遮罩）= 带软遮罩腐蚀的自适应实例归一化。",
+  "sites": [
+   "swapper_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Choose 'Advanced' for fine-tuning and retargeting options. 'Recast' uses the PerformRecast model for expression-only transfer.",
+  "zh": "选择“高级”以使用微调和重定向选项。“重铸”使用 PerformRecast 模型进行仅表情迁移。",
+  "sites": [
+   "common_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Enhancement overlays the driving expression onto the swapped face. Replacement prioritizes the driving expression while preserving the swapped face's identity cues. Advanced unlocks granular control over individual facial regions using independent percentage multipliers.",
+  "zh": "增强模式将驱动表情叠加到换脸结果上。替换模式优先采用驱动表情，同时保留换脸结果的身份特征。高级模式通过独立的百分比乘数解锁对各个面部区域的精细控制。",
+  "sites": [
+   "common_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Restricts expression transfer to a specific facial region (Eyes or Lips/Jaw). The unselected regions retain the swapped face's original baseline expression. ",
+  "zh": "将表情迁移限制到特定面部区域（眼睛或嘴唇/下颌）。未选择的区域保留换脸结果的原始基准表情。",
+  "sites": [
+   "common_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Globally scales the intensity of the transferred expression. 0.0 retains the original expression, 1.0 applies the exact driving expression, and values >1.0 exaggerate the overall movement.",
+  "zh": "全局缩放所迁移表情的强度。0.0 保留原始表情，1.0 应用完全相同的驱动表情，>1.0 的值会夸大整体动作。",
+  "sites": [
+   "common_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Advanced Mode Only: Independent multiplier for the rigid structural points (forehead, nose). 0.0 completely freezes the core face shape to preserve identity, while still allowing the other regional sliders (Lips, Eyes) to move freely.",
+  "zh": "仅高级模式：刚性结构点（前额、鼻子）的独立乘数。0.0 完全冻结核心脸型以保留身份，同时仍允许其他区域滑块（嘴唇、眼睛）自由移动。",
+  "sites": [
+   "common_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Advanced Mode Only: Independent multiplier for eye movement (blinks/squints/width). 0.0 freezes the eyes to the target's original state; 1.0 applies the exact driving motion; >1.0 exaggerates it. This value is scaled by the global Expression Strength.",
+  "zh": "仅高级模式：眼睛运动（眨眼/眯眼/眼睛宽度）的独立乘数。0.0 将眼睛冻结为目标的原始状态；1.0 应用完全相同的驱动运动；>1.0 夸大运动。此值会按全局表情强度缩放。",
+  "sites": [
+   "common_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Advanced Mode Only: Independent multiplier for eyebrow movement. 0.0 freezes the brows; 1.0 applies the driving motion. This value is scaled by the global Expression Strength.",
+  "zh": "仅高级模式：眉毛运动的独立乘数。0.0 冻结眉毛；1.0 应用驱动运动。此值会按全局表情强度缩放。",
+  "sites": [
+   "common_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Advanced Mode Only: Independent multiplier for cheek dynamics (puffing, smile folds). 0.0 freezes the cheeks; 1.0 applies the driving motion. This value is scaled by the global Expression Strength.",
+  "zh": "仅高级模式：脸颊动态（鼓腮、笑纹）的独立乘数。0.0 冻结脸颊；1.0 应用驱动运动。此值会按全局表情强度缩放。",
+  "sites": [
+   "common_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Advanced Mode Only: Independent multiplier for lip movement, mouth opening, and smile width. 0.0 freezes the mouth; 1.0 forces the exact driving lip expression. This value is scaled by the global Expression Strength.",
+  "zh": "仅高级模式：嘴唇运动、嘴巴张开程度和微笑宽度的独立乘数。0.0 冻结嘴巴；1.0 强制完全相同的驱动嘴唇表情。此值会按全局表情强度缩放。",
+  "sites": [
+   "common_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Advanced Mode Only: Independent multiplier for jaw movement (talking, chin drops). 0.0 freezes the jaw to preserve the target's face shape; 1.0 applies the exact driving jaw articulation. This value is scaled by the global Expression Strength.",
+  "zh": "仅高级模式：下颌运动（说话、下巴下落）的独立乘数。0.0 冻结下颌以保留目标脸型；1.0 应用完全相同的驱动下颌动作。此值会按全局表情强度缩放。",
+  "sites": [
+   "common_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Feather the recast crop border so it blends into the surrounding swapped face instead of showing a hard crop seam. 0.0 disables it.",
+  "zh": "羽化重铸裁剪边界，使其融入周围的换脸结果，而不是显示生硬的裁剪接缝。0.0 禁用该效果。",
+  "sites": [
+   "common_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Combines the eye motion from Relative Position with the gaze correction from Retargeting Eyes.\n\n- eyelid motion is biased toward Relative Position\n- gaze direction is biased toward Retargeting Eyes\n\nEnabling this mode also turns on Relative Position and Retargeting Eyes.",
+  "zh": "将“相对位置”的眼部运动与“眼部重定向”的视线校正相结合。\n\n- 眼睑运动偏向“相对位置”\n- 视线方向偏向“眼部重定向”\n\n启用此模式还会开启“相对位置”和“眼部重定向”。",
+  "sites": [
+   "common_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Triggers lip expression or face-parser mouth masks automatically when mouth action is detected. In 'Expression Restorer' mode, takes precedence over the face expression restorer's lip settings while preserving your eye configuration. Deactivating auto mouth restores normal face expression restorer behaviour for lips.",
+  "zh": "当检测到嘴部动作时，自动触发嘴唇表情或 FaceParser 嘴部遮罩。在“表情恢复器”模式下，优先于面部表情恢复器的嘴唇设置，同时保留眼部配置。停用自动嘴部功能会恢复面部表情恢复器对嘴唇的正常行为。",
+  "sites": [
+   "common_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "'Expression Restorer': overrides the face expression restorer lip settings when mouth is detected — preserves your eye/brow/general restorer settings, updates mouth position. Slower (runs LivePortrait). 'Face Parser Only': applies face-parser mouth dilation masks only, no expression transfer — faster, similar to xseg mouth.",
+  "zh": "“表情恢复器”：检测到嘴部时会覆盖面部表情恢复器的嘴唇设置——保留眼部/眉毛/常规恢复器设置，更新嘴部位置。速度较慢（运行 LivePortrait）。“仅 FaceParser”：仅应用 FaceParser 嘴部膨胀遮罩，不进行表情迁移——速度较快，类似 XSeg 嘴部。",
+  "sites": [
+   "common_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Minimum lip-open ratio required to activate the auto-mouth feature. The ratio is vertical_gap / horizontal_span of the mouth. Typical conversational values are 0.20–0.50; above 0.60 only fires for a very wide-open mouth. Lower values are more sensitive; higher values require a larger opening.",
+  "zh": "激活自动嘴部功能所需的最小唇部张开比率。该比率为嘴部的 vertical_gap / horizontal_span。典型对话值为 0.20–0.50；高于 0.60 仅会在嘴巴张得非常大时触发。较低值更敏感；较高值需要更大的张开度。",
+  "sites": [
+   "common_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Exponential moving-average factor applied to the detection confidence. Lower values smooth more aggressively (slower reaction); 1.0 means no smoothing (instant response).",
+  "zh": "应用于检测置信度的指数移动平均因子。较低值会进行更大幅度的平滑（反应较慢）；1.0 表示不平滑（即时响应）。",
+  "sites": [
+   "common_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Base expression factor applied to lips when auto-mouth is active. Actual strength is scaled proportionally with how far above the threshold the detected confidence is (smooth ramp-in).",
+  "zh": "自动嘴部功能激活时应用于嘴唇的基础表情因子。实际强度会根据检测置信度高于阈值的程度按比例缩放（平滑渐入）。",
+  "sites": [
+   "common_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Used when the face expression restorer is not already enabled. 'lips' transfers only mouth motion. 'all' includes eyes too. When the restorer is active, eye settings are inherited from it automatically.",
+  "zh": "在尚未启用面部表情恢复器时使用。“嘴唇”仅迁移嘴部动作；“全部”还包括眼部。当恢复器处于活动状态时，眼部设置会自动继承自该恢复器。",
+  "sites": [
+   "common_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Enables lip-ratio normalisation for better lip shape accuracy. In Expression Restorer mode uses lip retargeting (Advanced) or lp_retarget_lip (Simple/fallback).",
+  "zh": "启用唇部比率归一化，以提高唇形精度。在“表情恢复器”模式下使用唇部重定向（高级）或 lp_retarget_lip（简单/回退）。",
+  "sites": [
+   "common_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "When auto-mouth is active, trims the top part of the inner-mouth face-parser mask to keep swapped upper teeth visible while preserving original inner-mouth content like tongue/cavity.",
+  "zh": "自动嘴部功能激活时，裁切口腔内侧 FaceParser 遮罩的顶部，以保持换脸后的上牙可见，同时保留舌头/腔体等原始口内内容。",
+  "sites": [
+   "common_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Draw a green outline around the mouth region on the preview frame for debugging. Only visible when Auto Mouth Expression is active.",
+  "zh": "在预览画面上围绕嘴部区域绘制绿色轮廓，用于调试。仅在“自动嘴部表情”激活时可见。",
+  "sites": [
+   "common_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Dilation amount for the inner-mouth face-parser mask when auto-mouth is active. Overrides the Mouth slider in the Face Swap tab.",
+  "zh": "启用自动嘴部时，内嘴 FaceParser 蒙版的膨胀量。覆盖“换脸”选项卡中的“嘴部”滑块。",
+  "sites": [
+   "common_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Dilation amount for the upper-lip face-parser mask when auto-mouth is active. Overrides the Upper Lip slider in the Face Swap tab.",
+  "zh": "启用自动嘴部时，上唇 FaceParser 蒙版的膨胀量。覆盖“换脸”选项卡中的“上唇”滑块。",
+  "sites": [
+   "common_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Dilation amount for the lower-lip face-parser mask when auto-mouth is active. Overrides the Lower Lip slider in the Face Swap tab.",
+  "zh": "启用自动嘴部时，下唇 FaceParser 蒙版的膨胀量。覆盖“换脸”选项卡中的“下唇”滑块。",
+  "sites": [
+   "common_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Select the method to merge facial embeddings. \"Mean\" averages the embeddings, while \"Median\" selects the middle value, providing more robustness to outliers.",
+  "zh": "选择面部嵌入的合并方式。“均值”取嵌入的平均值，“中位数”取中间值，对离群值更稳健。",
+  "sites": [
+   "settings_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Do not show the \"load last workspace\" dialog when open then app, always load last workspace.",
+  "zh": "打开应用时不显示“加载上次工作区”对话框，始终加载上次工作区。",
+  "sites": [
+   "settings_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "When enabled, the mouse wheel adjusts parameter sliders and dropdowns on hover.\nWhen disabled, the mouse wheel scrolls the parameter panel instead.\nHold Ctrl to temporarily adjust a hovered slider or dropdown while this is disabled.",
+  "zh": "启用时，鼠标滚轮在悬停时调整参数滑块和下拉菜单。\n禁用时，鼠标滚轮改为滚动参数面板。\n禁用时按住 Ctrl 可临时调整悬停的滑块或下拉菜单。",
+  "sites": [
+   "settings_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Select the resolution for the swapped face in pixels. Higher values offer better quality but are slower to process. Auto dynamically selects the best resolution based on the input image size.",
+  "zh": "选择换脸后的人脸分辨率（像素）。数值越高画质越好，但处理越慢。“自动”会根据输入图像尺寸动态选择最佳分辨率。",
+  "sites": [
+   "swapper_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Select the rendering resolution for AlphaFace. '256' is native (fastest). '512' uses sub-pixel phase-shift tiling to preserve extremely fine skin and eye details (runs 4x slower). 'Auto' dynamically selects 512px only when the face is large.",
+  "zh": "选择 AlphaFace 的渲染分辨率。“256”为原生分辨率（最快）。“512”使用亚像素相移平铺，以保留极精细的皮肤和眼部细节（运行速度慢 4 倍）。“自动”仅在人脸较大时动态选择 512px。",
+  "sites": [
+   "swapper_layout_data"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Secondary Swapper",
+  "zh": "次级换脸器 (Secondary Swapper)",
+  "sites": [
+   "swapper_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Run a second swapper model sequentially and blend the results.",
+  "zh": "顺序运行第二个换脸模型并混合结果。",
+  "sites": [
+   "swapper_layout_data"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Secondary Model",
+  "zh": "次级模型 (Secondary Model)",
+  "sites": [
+   "swapper_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Choose the secondary swapper model to blend with the primary. Restricted to models sharing the Inswapper128ArcFace latent space.",
+  "zh": "选择要与主模型混合的次级换脸模型。仅限共享 Inswapper128ArcFace 潜在空间的模型。",
+  "sites": [
+   "swapper_layout_data"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Secondary Resolution",
+  "zh": "次级分辨率 (Secondary Resolution)",
+  "sites": [
+   "swapper_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Select the rendering resolution for the secondary swapper model.",
+  "zh": "选择次级换脸模型的渲染分辨率。",
+  "sites": [
+   "swapper_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Blend weight of the secondary model (0 = 100% Primary, 100 = 100% Secondary).",
+  "zh": "次级模型的混合权重（0 = 100% 主模型，100 = 100% 次级模型）。",
+  "sites": [
+   "swapper_layout_data"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Primary Strength",
+  "zh": "主强度 (Primary Strength)",
+  "sites": [
+   "swapper_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adjust iterations for the primary model (100 = 1 pass). 0 turns the primary swap off.",
+  "zh": "调整主模型的迭代次数（100 = 1 遍）。设为 0 将关闭主换脸。",
+  "sites": [
+   "swapper_layout_data"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Secondary Strength",
+  "zh": "次级强度 (Secondary Strength)",
+  "sites": [
+   "swapper_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adjust iterations for the secondary model (100 = 1 pass). 0 turns the secondary swap off.",
+  "zh": "调整次级模型的迭代次数（100 = 1 遍）。设为 0 将关闭次级换脸。",
+  "sites": [
+   "swapper_layout_data"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Bottom Border Blur",
+  "zh": "底部边缘模糊 (Bottom Border Blur)",
+  "sites": [
+   "swapper_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Bottom Border mask blending distance.",
+  "zh": "底部边界蒙版混合距离。",
+  "sites": [
+   "swapper_layout_data"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Left Border Blur",
+  "zh": "左侧边缘模糊 (Left Border Blur)",
+  "sites": [
+   "swapper_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Left Border mask blending distance.",
+  "zh": "左侧边界蒙版混合距离。",
+  "sites": [
+   "swapper_layout_data"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Right Border Blur",
+  "zh": "右侧边缘模糊 (Right Border Blur)",
+  "sites": [
+   "swapper_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Right Border mask blending distance.",
+  "zh": "右侧边界蒙版混合距离。",
+  "sites": [
+   "swapper_layout_data"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Top Border Blur",
+  "zh": "顶部边缘模糊 (Top Border Blur)",
+  "sites": [
+   "swapper_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Top Border mask blending distance.",
+  "zh": "顶部边界蒙版混合距离。",
+  "sites": [
+   "swapper_layout_data"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Number of Streams (High VRAM usage)",
+  "zh": "流数量（高显存占用） (Number of Streams (High VRAM usage))",
+  "sites": [
+   "settings_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Set number of Worker Streams while playing and recording. Depends strongly on GPU VRAM. Will be used on new processing task.",
+  "zh": "设置播放和录制时的工作线程流数量。对 GPU 显存依赖很大。将在新的处理任务中生效。",
+  "sites": [
+   "settings_layout_data"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Plays Active Segments Only",
+  "zh": "仅播放活动片段 (Plays Active Segments Only)",
+  "sites": [
+   "settings_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Only plays the active segments of the video, skipping inactive parts.",
+  "zh": "仅播放视频中的活动片段，跳过非活动部分。",
+  "sites": [
+   "settings_layout_data"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Accurate Audio-Video Sync",
+  "zh": "精确音视频同步 (Accurate Audio-Video Sync)",
+  "sites": [
+   "settings_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Start live preview audio and video from the preceding video keyframe. This improves audio/video sync after seeking, but playback can begin before the requested frame. Recording always starts at the requested frame.",
+  "zh": "从前一个视频关键帧开始实时预览音频和视频。这能改善跳转后的音视频同步，但播放可能会从请求帧之前开始。录制始终从请求帧开始。",
+  "sites": [
+   "settings_layout_data"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Swap Original Faces",
+  "zh": "替换原始人脸 (Swap Original Faces)",
+  "sites": [
+   "settings_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Allow Swap Pipeline to run on Original Faces (Blank Target faces).",
+  "zh": "允许换脸管线处理原始人脸（空白目标人脸）。",
+  "sites": [
+   "settings_layout_data"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Enable VR Mode",
+  "zh": "启用 VR 模式 (Enable VR Mode)",
+  "sites": [
+   "settings_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Enable VR mode. This will treat the input video as spherical VR footage and apply face swapping within undistorted perspective crops. Set the projection and coverage below to match your video — the defaults are standard VR180.",
+  "zh": "启用 VR 模式。这会将输入视频视为球形 VR 素材，并在未畸变的透视裁剪区域内进行换脸。请在下方设置投影和覆盖范围以匹配视频——默认值为标准 VR180。",
+  "sites": [
+   "settings_layout_data"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "VR Eye Mode",
+  "zh": "VR 眼部模式 (VR Eye Mode)",
+  "sites": [
+   "settings_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Select 'Both Eyes' for standard stereo VR video (left+right eye side-by-side). Select 'Single Eye' if the input video already contains only one eye's view (full frame = one view).",
+  "zh": "标准立体 VR 视频请选择“双眼”（左眼+右眼并排）。如果输入视频已只包含单眼视图（整帧 = 一个视图），请选择“单眼”。",
+  "sites": [
+   "settings_layout_data"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "VR Projection",
+  "zh": "VR 投影 (VR Projection)",
+  "sites": [
+   "settings_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "How each eye's view is stored in the video frame. 'Equirectangular' is a latitude/longitude grid — the usual output of stitching tools such as Mistika VR or Canon EOS VR Utility, and correct for standard VR180. 'Fisheye (equidistant)' is a circular lens image where distance from the centre is proportional to the angle from the lens axis — used by 200° lens formats (MKX200, VRCA220, Fisheye190) and typical of unstitched single-lens-per-eye footage. Picking the wrong one makes swapped faces land in visibly the wrong place, so if crops look misaligned, try the other.",
+  "zh": "每只眼睛的视图在视频帧中的存储方式。“等距柱状投影”是经纬度网格——这是 Mistika VR 或 Canon EOS VR Utility 等拼接工具常见的输出，适用于标准 VR180。“鱼眼（等距）”是圆形镜头图像，距中心的距离与偏离镜头轴线的角度成正比——用于 200° 镜头格式（MKX200、VRCA220、Fisheye190），也是未拼接的单眼单镜头素材的典型形式。选错会导致换脸结果明显落在错误位置，因此若裁剪区域看起来未对齐，请尝试另一种。",
+  "sites": [
+   "settings_layout_data"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "VR Coverage (per eye)",
+  "zh": "VR 覆盖范围（单眼） (VR Coverage (per eye))",
+  "sites": [
+   "settings_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "How many degrees of the sphere ONE eye's view covers horizontally. 180 = standard VR180 (the default, and identical to previous versions). 200 = 200° lens content such as MKX200. Use lower values for narrower footage, and 360 together with 'Single Eye' for a full monoscopic panorama. Vertical coverage is derived from this and the frame's aspect ratio, assuming square angular pixels, and is capped at 180° for equirectangular content. This is the coverage of the VIDEO, not the field of view you view it at — if your player recommends '110-150 FOV', that is a viewing zoom and does not necessarily mean the file covers 110-150°.",
+  "zh": "单眼视图在水平方向上覆盖球面的度数。180 = 标准 VR180（默认值，与之前版本相同）。200 = 如 MKX200 等 200° 镜头素材。较窄素材请使用更低值；搭配“单眼”并使用 360 可覆盖完整的单目全景。垂直覆盖范围由此值和画面宽高比推导，假设角像素为正方形；对于等距柱状内容，上限为 180°。这里的覆盖范围是视频的覆盖范围，而不是观看时的视场角——如果播放器建议“视场角 110-150”，那只是观看缩放，并不一定表示文件覆盖 110-150°。",
+  "sites": [
+   "settings_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Run face detection on a grid of undistorted perspective crops covering the whole sphere your footage spans (24 crops at the default coverage) to catch faces missed by standard detection (faces near the poles, near an eye's edge, head tilted back, or very close to the camera). Recommended for most VR content. Disable only when you are certain the standard detector finds every face you need.",
+  "zh": "在覆盖素材整个球面的未畸变透视裁剪网格上运行人脸检测（默认覆盖范围下为 24 个裁剪区域），以捕捉标准检测遗漏的人脸（靠近两极、靠近单眼边缘、头部后仰或非常靠近相机的人脸）。建议用于大多数 VR 内容。仅当您确定标准检测器能找到所需全部人脸时才禁用。",
+  "sites": [
+   "settings_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Select the landmark detection model, where different models detect varying numbers of facial landmarks.\n\ntufa98 - TUFA (IJCV 2025), 98 points. Best accuracy on strongly angled faces of the models here. ~3.9 ms/face.\ntufa314 - the same TUFA network asked for its dense 314-point set. Costs the same as tufa98 (the ViT encoder dominates), and the swap itself uses the same 5 points, so pick it for a denser overlay rather than for a better swap.\norformer98 - ORFormer (WACV 2025), 98 points. Built for occluded faces and also estimates which regions are hidden. ~5.9 ms/face.\n\nAll three use their own upright square crop and ignore 'Detect From Points'.",
+  "zh": "选择关键点检测模型，不同模型检测的面部关键点数量不同。\n\ntufa98 - TUFA（IJCV 2025），98 个点。在此处这些模型中，对强角度人脸的准确度最佳。约 3.9 毫秒/张人脸。\ntufa314 - 同一个 TUFA 网络请求其密集 314 点集。开销与 tufa98 相同（主要由 ViT 编码器决定），换脸本身使用相同的 5 个点，因此选择它更适合更密集的叠加显示，而不是为了更好的换脸。\norformer98 - ORFormer（WACV 2025），98 个点。专为遮挡人脸构建，还会估计哪些区域被遮挡。约 5.9 毫秒/张人脸。\n\n三者都使用各自的正方形直立裁剪，并忽略“从点检测”。",
+  "sites": [
+   "settings_layout_data"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Sort A-Z for new Embeddings",
+  "zh": "新嵌入向量按 A-Z 排序 (Sort A-Z for new Embeddings)",
+  "sites": [
+   "settings_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "ONLY APPLIES WHEN CREATING NEW EMBEDDINGS. When enabled, new embeddings are sorted alphabetically by name (A-Z).",
+  "zh": "仅适用于创建新嵌入时。启用后，新嵌入会按名称字母顺序（A-Z）排序。",
+  "sites": [
+   "settings_layout_data"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Turn OFF warning messages",
+  "zh": "关闭警告消息 (Turn OFF warning messages)",
+  "sites": [
+   "settings_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "When enabled, clearing all target media, input faces or embeddings will not show confirmation prompts. ⚠ It will also not prompt when DELETING files.",
+  "zh": "启用后，清除所有目标媒体、输入人脸或嵌入时不会显示确认提示。⚠ 删除文件时也不会提示。",
+  "sites": [
+   "settings_layout_data"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Enable Toast Notifications",
+  "zh": "启用 Toast 通知 (Enable Toast Notifications)",
+  "sites": [
+   "settings_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Show toast notifications after saving videos or images.",
+  "zh": "保存视频或图像后显示轻提示通知。",
+  "sites": [
+   "settings_layout_data"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Notification Duration (ms)",
+  "zh": "通知持续时间（毫秒） (Notification Duration (ms))",
+  "sites": [
+   "settings_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Duration of toast notifications in milliseconds (1000 = 1 sec.)",
+  "zh": "浮动通知的持续时间，以毫秒为单位（1000 = 1 秒）",
+  "sites": [
+   "settings_layout_data"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Show Seek Bar Thumbnails",
+  "zh": "显示进度条缩略图 (Show Seek Bar Thumbnails)",
+  "sites": [
+   "settings_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Show and generate thumbnails on the video seek bar. Disable to hide them and stop generation.",
+  "zh": "在视频进度条上显示并生成缩略图。禁用后将隐藏缩略图并停止生成。",
+  "sites": [
+   "settings_layout_data"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Enable Face Shaping (2D Mesh)",
+  "zh": "启用人脸塑形（2D 网格） (Enable Face Shaping (2D Mesh))",
+  "sites": [
+   "face_editor_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Enable 2D mesh deformation for face slimming and cosmetic shaping.",
+  "zh": "启用 2D 网格变形，用于瘦脸和美颜塑形。",
+  "sites": [
+   "face_editor_layout_data"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Face Slimming",
+  "zh": "瘦脸 (Face Slimming)",
+  "sites": [
+   "face_editor_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adjusts the width of the cheeks. 50 is neutral.",
+  "zh": "调整脸颊宽度。50 为中性值。",
+  "sites": [
+   "face_editor_layout_data"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Chin Slimming",
+  "zh": "瘦下巴 (Chin Slimming)",
+  "sites": [
+   "face_editor_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adjusts the width of the lower jaw and chin. 50 is neutral.",
+  "zh": "调整下颌和下巴的宽度。50 为中性值。",
+  "sites": [
+   "face_editor_layout_data"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Forehead Height",
+  "zh": "额头高度 (Forehead Height)",
+  "sites": [
+   "face_editor_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adjusts the vertical height of the forehead. 50 is neutral.",
+  "zh": "调整额头的垂直高度。50 为中性值。",
+  "sites": [
+   "face_editor_layout_data"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Chin Length",
+  "zh": "下巴长度 (Chin Length)",
+  "sites": [
+   "face_editor_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adjusts the vertical length of the chin. 50 is neutral.",
+  "zh": "调整下巴的垂直长度。50 为中性值。",
+  "sites": [
+   "face_editor_layout_data"
+  ]
+ },
+ {
+  "kind": "label",
+  "en": "Face Length",
+  "zh": "面部长度 (Face Length)",
+  "sites": [
+   "face_editor_layout_data"
+  ]
+ },
+ {
+  "kind": "help",
+  "en": "Adjusts the overall vertical length of the face. 50 is neutral.",
+  "zh": "调整面部的整体垂直长度。50 为中性值。",
+  "sites": [
+   "face_editor_layout_data"
+  ]
+ }
+]
